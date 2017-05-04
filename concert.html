@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/css/style.css">
+
+  <style>
+
+
+
+
+  </style>
+
+
+</head>
+
+<body>
+
+
+
+
+  <div class="container"> 
+
+
+    <div class="clearfix"></div>
+
+    <br>
+
+    <div class="row">
+
+      <div class="col-sm-2"></div>
+
+      <div class="col-sm-8">
+
+         <div class="input-group">
+            <input type="text" class="form-control input-lg" placeholder="Search for events, artists or teams" name="search">
+            <div class="input-group-btn">
+               <button class="btn btn-primary btn-lg btn-select-light" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+           </div>  <!-- /.input-group-btn -->
+       </div>  <!-- /.input-group -->  
+
+
+   </div>  <!-- /.col-sm-9 -->
+
+   <div class="col-sm-2"></div>
+
+   <div class="clearfix"></div>
+
+   <br>
+
+
+   <div class="col-sm-4">
+
+
+       <div id="bts-ex-1" class="selectpicker">
+          <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+            <span class="placeholder">Select Date</span>
+            <span class="caret"></span>
+        </button>
+        <div class="dropdown-menu">
+            <ul class="list-unstyled">
+              <li class="items" data-value="alldates">All Dates</li>
+              <li class="items" data-value="today">Today</li>
+              <li class="items" data-value="week">This Week</li>
+              <li class="items" data-value="month">This Month</li>
+              <li class="items" data-value="nx-month">Next Month</li>
+              <li class="items" data-value="nx-year">Next Year</li>
+          </ul>
+      </div>
+      <input type="hidden" name="bts-ex-1" value="">
+  </div>
+
+</div>  <!-- /.col-sm-4 -->
+
+<div class="col-sm-4">
+
+ <div id="bts-ex-1" class="selectpicker">
+    <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+      <span class="placeholder">Select Show</span>
+      <span class="caret"></span>
+  </button>
+  <div class="dropdown-menu">
+      <ul class="list-unstyled">
+        <li class="items" data-value="concert">All Concerts</li>
+        <li class="items" data-value="country">Country</li>
+        <li class="items" data-value="festival">Festivals</li>
+        <li class="items" data-value="hiphop">Hip Hop</li>
+        <li class="items" data-value="gospel">Gospel</li>
+        <li class="items" data-value="jazz">Jazz</li>
+        <li class="items" data-value="musical">Musicals</li> 
+        <li class="items" data-value="pop">Pop</li>
+        <li class="items" data-value="rap">Rap</li>
+        <li class="items" data-value="rnb">R&amp;B</li>
+        <li class="items" data-value="rock">Rock</li>
+        <li class="items" data-value="soul">Soul</li>
+        <li class="items" data-value="tour">Tours</li> 
+    </ul>
+</div>
+<input type="hidden" name="bts-ex-1" value="">
+</div>
+
+</div>  <!-- /.col-sm-4 -->
+
+<div class="col-sm-4">
+
+   <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
+      <a href="#" class="clear"><span class="fa fa-times"></span><span class="sr-only">Cancel the selection</span></a>
+      <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+        <span class="placeholder">Select by City</span>
+        <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+        <div class="live-filtering" data-clear="true" data-autocomplete="true" data-keys="true">
+          <label class="sr-only" for="input-bts-ex-5">Search by City </label>
+          <div class="search-box">
+            <div class="input-group">
+              <span class="input-group-addon" id="search-icon5">
+                <span class="fa fa-search"></span>
+                <a href="#" class="fa fa-times hide filter-clear"><span class="sr-only">Clear filter</span></a>
+            </span>
+            <input type="text" placeholder="Search in the list" id="input-bts-ex-5" class="form-control live-search" aria-describedby="search-icon5" tabindex="1" />
+        </div>
+    </div>
+    <div class="list-to-filter">
+        <ul class="list-unstyled">
+          <li class="optgroup">
+            <span class="optgroup-header">Alabama <span class="subtext"></span></span>
+            <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="al-birmingham">Birmingham, AL</li>
+              <li class="filter-item items" data-value="al-huntsville">Huntsville, AL</li>
+              <li class="filter-item items" data-value="al-mobile">Mobile, AL</li>
+              <li class="filter-item items" data-value="al-tucaloosa">Tuscaloosa, AL</li>
+          </ul>
+          <span class="optgroup-header">Arizona <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="az-phoenix">Phoenix, AZ</li>
+          </ul>
+          <span class="optgroup-header">Arkansas <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="ar-littlerock">Little Rock, AR</li>
+          </ul>
+          <span class="optgroup-header">California <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="ca-anaheim">Anaheim, CA</li>
+              <li class="filter-item items" data-value="ca-berkeley">Berkeley, CA</li>
+
+              <li class="filter-item items"  data-value="ca-losangeles">Los Angeles, CA</li>
+              <li class="filter-item items" data-value="ca-oakland">Oakland, CA</li>
+              <li class="filter-item items" data-value="ca-riverside">Riverside, CA</li>
+              <li class="filter-item items" data-value="ca-sacramento">Sacramento, CA</li>
+              <li class="filter-item items"  data-value="ca-sandiego">San Diego, CA</li>
+              <li class="filter-item items" data-value="ca-sanfrancisco">San Francisco, CA</li>
+              <li class="filter-item items" data-value="ca-westhollywood">West Hollywood, CA</li>
+
+
+          </ul>
+          <span class="optgroup-header">Colorado <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="co-denver">Denver, CO</li>
+              <li class="filter-item items" data-value="co-englewood">Englewood, CO</li>
+              <li class="filter-item items" data-value="co-morrison">Morrison, CO</li>
+
+          </ul>
+          <span class="optgroup-header">Connecticut <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="ct-bridgeport">Bridgeport, CT</li>
+              <li class="filter-item items"  data-value="ct-fairfield">Fairfield, CT</li>
+              <li class="filter-item items"  data-value="ct-newhaven">New Haven, CT</li>
+
+              <li class="filter-item items" data-value="ct-ridgefield">Ridgefield, CT</li>
+
+          </ul>
+          <span class="optgroup-header">Florida <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="fl-clearwater">Clearwater, FL</li>
+              <li class="filter-item items" data-value="fl-fortlauderdale">Fort Lauderdale, FL</li>
+              <li class="filter-item items" data-value="fl-hollywood">Hollywood, FL</li>
+              <li class="filter-item items" data-value="fl-jacksonville">Jacksonville, FL</li>
+
+
+              <li class="filter-item items" data-value="fl-miami">Miami, FL</li>
+              <li class="filter-item items" data-value="fl-orlando">Orlando, FL</li>
+
+              <li class="filter-item items"  data-value="fl-pembrokepines">Pembroke Pines, FL</li>
+              <li class="filter-item items" data-value="fl-pontevedrabeach">Ponte Vedra Beach, FL</li>
+
+              <li class="filter-item items"  data-value="fl-stpetersburg">St Petersburg, FL</li>
+              <li class="filter-item items" data-value="fl-sunrise">Sunrise, FL</li>
+              <li class="filter-item items" data-value="fl-tampa">Tampa, FL</li>
+          </ul>
+          <span class="optgroup-header">Georgia <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+
+              <li class="filter-item items" data-value="ga-alpharetta">Alpharetta, GA</li>
+
+              <li class="filter-item items"  data-value="ga-atlanta"> Atlanta, GA</li>
+              <li class="filter-item items" data-value="ga-augusta"> Augusta, GA</li>
+
+              <li class="filter-item items" data-value="ga-columbus">Columbus, GA</li>
+              <li class="filter-item items" data-value="ga-duluth">Duluth, GA</li>
+              <li class="filter-item items" data-value="ga-fayetteville,">Fayetteville, GA</li>
+              <li class="filter-item items" data-value="ga-mableton"> Mableton, GA</li>
+
+              <li class="filter-item items" data-value="ga-macon"> Macon, GA</li>
+
+
+          </ul>
+          <span class="optgroup-header">Illinois <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+
+              <li class="filter-item items"  data-value="il-chicago"> Chicago, IL</li>
+
+              <li class="filter-item items" data-value="il-highlandpark"> Highland Park, IL</li>
+              <li class="filter-item items" data-value="il-rosemont">Rosemont, IL</li>
+
+          </ul>
+          <span class="optgroup-header">Indiana <span class="subtext"></span></span>
+
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="in-indianapolis"> Indianapolis, IN</li>
+          </ul>
+          <span class="optgroup-header">Iowa <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+
+              <li class="filter-item items" data-value="ia-cedarrapids">Cedar Rapids, IA</li>
+              <li class="filter-item items"  data-value="ia-desmoines">Des Moines, IA</li>
+
+
+
+          </ul>
+          <span class="optgroup-header">Kentuchy <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="ky-louisville"> Louisville, KY</li>
+          </ul>
+          <span class="optgroup-header">Louisiana <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="la-batonrouge"> Baton Rouge, LA</li>
+
+              <li class="filter-item items" data-value="la-lafayette">Lafayette, LA</li>
+              <li class="filter-item items" data-value="la-neworleans">New Orleans, LA</li>
+
+          </ul>
+          <span class="optgroup-header">Maine <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="me-portland">Portland, ME</li>
+          </ul>
+          <span class="optgroup-header">Maryland <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+
+              <li class="filter-item items" data-value="md-annapolis">Annapolis, MD</li>
+              <li class="filter-item items"  data-value="md-baltimore">Baltimore, MD</li>
+              <li class="filter-item items" data-value="md-bowie">Bowie, MD</li>
+              <li class="filter-item items" data-value="md-silverspring">Silver Spring, MD</li>
+
+
+          </ul>
+          <span class="optgroup-header">Massachusetts <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="ma-boston">Boston, MA</li>
+              <li class="filter-item items" data-value="ma-cambridge">Cambridge, MA</li>
+          </ul>
+          <span class="optgroup-header">Michigan <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="mi-detroit">Detroit, MI</li>
+              <li class="filter-item items" data-value="mi-grandrapids">Grand Rapids, MI</li>
+          </ul>
+          <span class="optgroup-header">Minnesota <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="mn-stpaul">Saint Paul, MN</li>
+          </ul>
+          <span class="optgroup-header">Missouri <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="mo-kansascity">Kansas City, MO</li>
+              <li class="filter-item items"  data-value="mo-stlouis">St. Louis, MO</li>
+
+          </ul>
+          <span class="optgroup-header">Mississippi <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="ms-biloxi">Biloxi, MS</li>
+              <li class="filter-item items" data-value="ms-jackson">Jackson, MS</li>
+          </ul>
+          <span class="optgroup-header">New Hampshire <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="nh-gilford">Gilford, NH</li>
+          </ul>
+          <span class="optgroup-header">New Jersey <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+
+              <li class="filter-item items" data-value="nj-atlanticcity">Atlantic City, NJ</li>
+              <li class="filter-item items"  data-value="nj-camden">Camden, NJ</li>
+              <li class="filter-item items" data-value="nj-eastrutherford">East Rutherford, NJ</li>
+
+              <li class="filter-item items" data-value="nj-montclair">Montclair, NJ</li>
+
+
+              <li class="filter-item items" data-value="nj-newark"> Newark, NJ</li>
+
+          </ul>
+          <span class="optgroup-header">New Mexico <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="nm-albuquerque">Albuquerque, NM</li>
+          </ul>
+          <span class="optgroup-header">New York <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+
+              <li class="filter-item items" data-value="ny-albany">Albany, NY</li>
+
+              <li class="filter-item items" data-value="ny-brooklyn">Brooklyn, NY</li>
+              <li class="filter-item items"  data-value="ny-newyork">New York, NY</li>
+
+              <li class="filter-item items" data-value="ny-niagarafalls">Niagara Falls, NY</li>
+              <li class="filter-item items" data-value="ny-rochester">Rochester, NY</li>
+
+          </ul>
+          <span class="optgroup-header">Nevada <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="nv-lasvegas">Las Vegas, NV</li>
+          </ul>
+          <span class="optgroup-header">New Jersey <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="nj-newark">Newark, NJ</li>
+              <li class="filter-item items" data-value="nj-montclair">Montclair, NJ</li>
+          </ul>
+          <span class="optgroup-header">North Carolina <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+
+              <li class="filter-item items" data-value="nc-asheville">Asheville, NC</li>
+              <li class="filter-item items"  data-value="nc-charlotte">Charlotte, NC</li>
+
+              <li class="filter-item items" data-value="nc-durham"> Durham, NC</li>
+              <li class="filter-item items" data-value="nc-greensboro"> Greensboro, NC</li>
+              <li class="filter-item items" data-value="nc-raleigh">Raleigh, NC</li>
+          </ul>
+          <span class="optgroup-header">Ohio <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="oh-cincinnati"> Cincinnati, OH</li>
+              <li class="filter-item items" data-value="oh-cleveland">Cleveland, OH</li>
+              <li class="filter-item items" data-value="oh-columbus"> Columbus, OH</li>
+
+          </ul>
+          <span class="optgroup-header">Oregon <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="or-portland">Portland, OR</li>
+          </ul>
+          <span class="optgroup-header">Pennsylvania <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="pa-philadelphia">Philadelphia, PA</li>
+          </ul>
+          <span class="optgroup-header">South Carolina <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="sc-charleston">Charleston, SC</li>
+              <li class="filter-item items"  data-value="sc-columbia">Columbia, SC</li>
+
+              <li class="filter-item items" data-value="sc-greenville">Greenville, SC</li>
+              <li class="filter-item items" data-value="sc-myrtlebeach">North Myrtle Beach, SC</li>
+
+
+          </ul>
+
+          <span class="optgroup-header">Tennessee <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="tn-knoxville">Knoxville, TN</li>
+
+              <li class="filter-item items" data-value="tn-memphis">Memphis, TN</li>
+              <li class="filter-item items" data-value="tn-nashville">Nashville, TN</li>
+          </ul>
+          <span class="optgroup-header">Texas <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="tx-austin">Austin, TX</li>
+              <li class="filter-item items" data-value="tx-dallas">Dallas, TX</li>
+
+              <li class="filter-item items" data-value="tx-houston">Houston, TX</li>
+              <li class="filter-item items" data-value="tx-sugarland">Sugar Land, TX</li>
+          </ul>
+          <span class="optgroup-header">Utah <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="ut-saltlakecity">Salt Lake City, UT</li>
+          </ul>
+
+          <span class="optgroup-header">Virginia <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="va-alexandria">Alexandria, VA</li>
+              <li class="filter-item items"  data-value="va-norfolk">Norfolk, VA</li>
+              <li class="filter-item items" data-value="va-richmond">Richmond, VA</li>
+
+          </ul>
+          <span class="optgroup-header">Washington <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items"  data-value="wa-seattle"> Seattle, WA</li>
+              <li class="filter-item items" data-value="wa-tacoma">Tacoma, WA</li>
+          </ul>
+          <span class="optgroup-header">West Virginia <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="wv-charlestown">Charles Town, WV</li>
+          </ul>
+          <span class="optgroup-header">Wisconsin <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="wi-milwaukee"> Milwaukee, WI</li>
+          </ul>
+
+          <span class="optgroup-header">Canada <span class="subtext"></span></span>
+          <ul class="list-unstyled">
+              <li class="filter-item items" data-value="cn-calgary">Calgary, Canada</li>
+              <li class="filter-item items" data-value="cn-edmonton">Edmonton, Canada</li>
+              <li class="filter-item items" data-value="cn-montreal">Montreal, Canada</li>
+              <li class="filter-item items" data-value="cn-ottawa">Ottawa, Canada</li>   
+
+              <li class="filter-item items" data-value="cn-quebec">Quebec, Canada</li>  
+
+              <li class="filter-item items" data-value="cn-toronto">Toronto, Canada</li>
+              <li class="filter-item items" data-value="cn-vancouver">Vancouver, Canada</li>
+
+
+              <li class="filter-item items" data-value="cn-winnipeg">Winnipeg, Canada</li>
+
+          </ul>
+      </li>
+  </ul>
+  <div class="no-search-results">
+      <div class="alert alert-warning" role="alert"><i class="fa fa-warning margin-right-sm"></i>No entry for <strong>'<span></span>'</strong> was found.</div>
+  </div>
+</div>
+</div>
+</div>
+<input type="hidden" name="bts-ex-5" value="">
+</div>
+
+
+</div>   <!-- /.col-sm-4 -->
+</div> <!-- /.row -->
+
+<div class="row">
+
+  <div class="clearfix"></div>
+
+  <br>
+
+  <div class="thumbnails gallery">
+
+    <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3" data-tag="today week pop nc-charlotte">
+      <a href="#">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./img/sheryl-crow400.jpg">    
+          <div class="caption">
+            <div class="row">
+              <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+              <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+                <h5 class="item-city"> Charlotte, NC</h5></div>
+
+            </div>
+        </div>
+    </div>
+</a>
+</div>  <!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="week month rap tn-memphis">
+    <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" alt="" src="./img/travis-scott400.jpg" />
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>20</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Travis Scott </h5><h5 class="item-city"> Memphis, TN</h5></div>
+
+         </div>
+     </div>
+ </div>
+</a>
+</div>
+</div> <!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="month hiphop fl-miami">
+    <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" alt="" src="./img/billy-joel400.jpg" /> 
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Billy Joel </h5>
+                <h5 class="item-city"> Miami, FL</h5></div>
+            </div>
+        </div>
+    </div>
+</a>
+</div>  <!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="week month rnb tour">
+ <a href="#"> 
+    <div class="thumbnail">
+      <img class="img-responsive" src="./img/chris-brown400.jpg">
+      <div class="caption tour-alert">
+         <div class="row">
+           <div class="col-xs-12"><h5 class="item-tour"> Chris Brown: The Party Tour </h5>
+              <h5 class="item-sale"> On Sale Now </h5></div>
+          </div>
+      </div>
+  </div>
+</a>
+</div>  <!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-month soul il-chicago">
+  <a href="#">
+    <div class="thumbnail">
+      <img class="img-responsive" src="./img/chris-rock400.jpg">  
+      <div class="caption">
+        <div class="row">
+           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+           <div class="col-xs-9"><h5 class="item-artist"> Chris Rock </h5><h5 class="item-city"> Chicago, IL</h5></div>
+       </div>
+   </div>
+</div>
+</a>
+</div> <!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-year rock tn-nashville">
+  <a href="#">
+    <div class="thumbnail">
+      <img class="img-responsive" alt="" src="./img/ti400.jpg" />  
+      <div class="caption">
+        <div class="row">
+           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+           <div class="col-xs-9"><h5 class="item-artist"> T.I. </h5><h5 class="item-city"> Nashville, TN</h5></div>
+       </div>
+   </div>
+</div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="today week jazz wv-charlestown">
+   <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" alt="" src="./img/smino400.jpg" />   
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Smino </h5><h5 class="item-city"> Charles Town, WV</h5></div>
+         </div>
+     </div>
+ </div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="today week month rap ga-atlanta">
+  <a href="#">
+    <div class="thumbnail">
+      <img class="img-responsive" alt="" src="./img/rick-ross400.jpg" /> 
+      <div class="caption">
+        <div class="row">
+           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+           <div class="col-xs-9"><h5 class="item-artist"> Rick Ross  </h5><h5 class="item-city"> Atlanta, GA</h5></div>
+       </div>
+   </div>
+</div>
+</a>
+</div> <!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="today week rap ms-jackson">
+   <a href="#">
+      <div class="thumbnail">
+         <img class="img-responsive" alt="" src="./img/diana-ross400.jpg" />  
+         <div class="caption">
+            <div class="row">
+               <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+               <div class="col-xs-9"><h5 class="item-artist"> Diana Ross </h5><h5 class="item-city"> Jackson, MS</h5></div>
+           </div>
+       </div>
+   </div>
+</a>
+</div> <!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="week month rnb hiphop ga-atlanta">
+  <a href="#">
+    <div class="thumbnail">
+      <img class="img-responsive" alt="" src="./img/jerry-seinfeld400.jpg" />   
+      <div class="caption">
+        <div class="row">
+           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+           <div class="col-xs-9"><h5 class="item-artist"> Teddy Riley </h5><h5 class="item-city"> Atlanta, GA</h5></div>
+       </div>
+   </div>
+</div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-week month soul la-neworleans">
+   <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/leela-james400.jpg">   
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Leela James </h5><h5 class="item-city"> New Orleans, LA </h5></div>
+         </div>
+     </div>
+ </div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-year rap ga-atlanta">
+   <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/anthony-hamilton400.jpg">  
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Anthony Hamilton  </h5><h5 class="item-city"> Atlanta, GA</h5></div>
+         </div>
+     </div>
+ </div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-year jazz la-neworleans">
+   <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/a-tribe-called-quest400.jpg">  
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> A Tribe Called Quest  </h5><h5 class="item-city"> New Orleans, LA</h5></div>
+         </div>
+     </div>
+ </div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-year rnb ms-jackson">
+   <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/sabrina-carpenter400.jpg">  
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Alabama Crimson Tide   </h5><h5 class="item-city"> Jackson, MS</h5></div>
+         </div>
+     </div>
+ </div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-year rap ms-jackson">
+   <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/anthony-hamilton400.jpg">  
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Anthony Hamilton  </h5><h5 class="item-city"> Jackson, MS</h5></div>
+         </div>
+     </div>
+ </div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+
+<!-- /Thumbnail Post Begin -->
+<div class="col-md-3" data-tag="nx-year rnb soul ms-jackson">
+   <a href="#">
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/brandy400.jpg">  
+        <div class="caption">
+          <div class="row">
+             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
+             <div class="col-xs-9"><h5 class="item-artist"> Brandy  </h5><h5 class="item-city"> Jackson, MS</h5></div>
+         </div>
+     </div>
+ </div>
+</a>
+</div><!-- .col-md-3 -->
+<!-- /Thumbnail Post End -->
+
+
+</div>
+<div class="push"></div>
+
+<!-- Load More Begins -->
+<div class="row"><button type="button" class="btn btn-default btn-block"><h4>Load More</h4></button></div>
+
+
+</div>  <!-- /.row -->
+
+</div>  <!-- /.container -->
+
+<script src="./dist/js/jquery-3.2.1.js"></script>
+<script src="./dist/js/bootstrap.min.js"></script>
+
+<script src="./dist/js/vendor/livefilter.min.js"></script>
+<script src="./dist/js/vendor/bootstrap-select.min.js"></script>
+<script src="./dist/js/vendor/filterlist.min.js"></script>
+<script src="./dist/js/vendor/tabcomplete.min.js"></script>
+<script src="./dist/js/vendor/plugins.js"></script>
+
+<script src="./dist/js/script.js"></script>
+
+<script>
+
+
+</script>
+
+
+</body>
+</html>
+
