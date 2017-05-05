@@ -2,8 +2,6 @@
 
 # Bootstrap Masonry Content Filter 
 
-Design Perspective Functionality View: <https://masonryfilter.netlify.com/design-mockup.pdf>
-
 ### Home
 
 Search All Category (e.g Comedy, Concerts, Festivals, Musicals, etc.)
@@ -27,6 +25,12 @@ View Demo: <https://masonryfilter.netlify.com/sport.html>
 ## Filter Test
 
 View Demo: <https://masonryfilter.netlify.com/filter.html>
+
+***
+
+## Test Prototype 
+
+View Demo: <https://masonryfilter.netlify.com/test.html>
 
 
 
