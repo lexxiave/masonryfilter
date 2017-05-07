@@ -7,15 +7,87 @@
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./dist/css/style.css">
   
-  <style>
 
-    div {
+ <style>
+
+div .container {
     display:none;
-    /*padding: 10px;*/
-    /*margin-bottom: 5px;*/
-    }
+    padding: 10px;
+    margin-bottom: 5px;
+}
 
-  </style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+#myInput {
+    border-box: box-sizing;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /*min-width: 360px;*/
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #e6e6fa;}
+
+.show {display:block;}
+
+
+.dropdown-content .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.dropdown-content h4 {
+    font-size: 16px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 300px;
+    overflow-x: hidden;
+}
+
+
+</style>
+
 
 </head>
 
@@ -101,6 +173,63 @@
           <li><a href="#" class="play">Plays</a></li>
           <li><a href="#" class="sport">Sports</a></li>
           <li><a href="#" class="tour">Tours</a></li>
+        </ul> 
+      </div>
+    </div>
+
+     <!-- /.Home Search -->
+     
+      <br /> 
+     
+      <!-- /.Concert Search -->
+
+    <div class="selectpicker">
+      <button onclick="srCategory()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+        <span class="placeholder">Search by Category</span>
+        <span class="caret"></span>
+      </button>
+      <div id="myDropdown02" class="dropdown-content">
+        <ul id="filterOptions" class="list-unstyled">  
+          <div class="clearfix"></div>
+           <br />
+          <li><a href="#" class="all">All Concerts</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="country">Country</a></li>
+          <li><a href="#" class="festival">Festivals</a></li>
+          <li><a href="#" class="gospel">Gospel</a></li>
+          <li><a href="#" class="hiphop">Hip Hop</a></li>
+          <li><a href="#" class="jazz">Jazz</a></li>
+          <li><a href="#" class="latin">Latin</a></li>
+          <li><a href="#" class="musical">Musicals</a></li>
+          <li><a href="#" class="pop">Pop</a></li>
+          <li><a href="#" class="rap">Rap</a></li>
+          <li><a href="#" class="rnb">R&amp;B</a></li>
+          <li><a href="#" class="rock">Rock</a></li>
+          <li><a href="#" class="soul">Soul</a></li>
+          <li><a href="#" class="tour">Tours</a></li>
+        </ul> 
+      </div>
+    </div>
+
+    <br />
+
+      <!-- /.Sports Search -->
+
+    <div class="selectpicker">
+      <button onclick="srCategory()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+        <span class="placeholder">Search by Category</span>
+        <span class="caret"></span>
+      </button>
+      <div id="myDropdown02" class="dropdown-content">
+        <ul id="filterOptions" class="list-unstyled">  
+          <div class="clearfix"></div>
+           <br />
+          <li><a href="#" class="all">All Concerts</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="baseball">Baseball</a></li>
+          <li><a href="#" class="basketball">Basketball</a></li>
+          <li><a href="#" class="football">Football</a></li>
+          <li><a href="#" class="soccer">Soccer</a></li>
         </ul> 
       </div>
     </div>
@@ -1583,10 +1712,6 @@
 
 </div>  <!-- /.row -->
 
-<!-- Load More Begins -->
-<a href="#" type="button" id="loadMore" class="btn btn-default btn-block"><h4>Load More</h4></a>
-
-
 </div>  <!-- /.container -->
 
 
@@ -1596,8 +1721,96 @@
 
 <script src="./dist/js/jquery-3.2.1.js"></script>
 <script src="./dist/js/bootstrap.min.js"></script>
-<script src="./dist/js/dropdown-selector.js"></script>
-<script src="./dist/js/loader.js"></script>
+
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function srDate() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function srCategory() {
+    document.getElementById("myDropdown02").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function srCity() {
+    document.getElementById("myDropdown03").classList.toggle("show");
+}
+
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+<script>
+
+$(document).ready(function () {
+    $('#filterOptions li a').click(function () {
+        var ourClass = $(this).attr('class');
+        $('#filterOptions li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        if (ourClass == 'all') {
+            $('#ourHolder').children().show();
+        } else {
+            $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
+            $('#ourHolder').children('div.' + ourClass).show();
+        }
+
+        return false;
+    });
+});
+
+</script>
+
 
 </body>
 </html>

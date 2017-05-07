@@ -1,332 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 
-  <!-- Bootstrap Core CSS -->
+ <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./dist/css/style.css">
-  
-  <style>
 
-    div {
+
+<style>
+
+div {
     display:none;
-    /*padding: 10px;*/
-    /*margin-bottom: 5px;*/
-    }
+    padding: 10px;
+    margin-bottom: 5px;
+}
 
-  </style>
+/*#loadMore {
+    text-align: center;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+}*/
 
+</style>
 </head>
-
 <body>
 
-
-<div class="container"> 
-
- <div class="clearfix"></div>
-
-   <br>
-
- <div class="row">  
-
-
-  <div class="col-sm-2"></div>
-
-      <div class="col-sm-8">
-
-         <div class="input-group">
-            <input type="text" class="form-control input-lg" placeholder="Search for events, artists or teams" name="search">
-            <div class="input-group-btn">
-               <button class="btn btn-primary btn-lg btn-select-light" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-           </div>  <!-- /.input-group-btn -->
-       </div>  <!-- /.input-group -->  
-
-
-   </div>  <!-- /.col-sm-9 -->
-
-   <div class="col-sm-2"></div>
-
-   <div class="clearfix"></div>
-
-   <br>
-
-
-   <div class="col-sm-4">
-
-   <div class="selectpicker">  
-      <button onclick="srDate()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-        <span class="placeholder">Search by Date</span>
-        <span class="caret"></span>
-      </button>
-      <div id="myDropdown" class="dropdown-content">
-        <ul id="filterOptions" class="list-unstyled">  
-          <div class="clearfix"></div>
-           <br />
-          <li><a href="#" class="all">All Dates</a></li>
-          <li class="divider"></li>
-          <li><a href="#" class="recent">Recently Added</a></li>
-          <li><a href="#" class="week">This Week</a></li>
-          <li><a href="#" class="nx-week">Next Week</a></li>
-          <li><a ref="#" class="month">This Month</a></li>
-          <li><a href="#" class="nx-month">Next Month</a></li>
-          <li><a href="#" class="nx-year">Next Year</a></li>
-        </ul> 
-      </div>
-    </div>
-
-  </div>  <!-- /.col-sm-4 -->
-
-
-  <div class="col-sm-4">
-
-    <!-- /.Home Search -->
-
-    <div class="selectpicker">
-      <button onclick="srCategory()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-        <span class="placeholder">Search by Category</span>
-        <span class="caret"></span>
-      </button>
-      <div id="myDropdown02" class="dropdown-content">
-        <ul id="filterOptions" class="list-unstyled">  
-          <div class="clearfix"></div>
-           <br />
-          <li><a href="#" class="all">All Events</a></li>
-          <li class="divider"></li>
-          <li><a href="#" class="comedy">Comedy</a></li>
-          <li><a href="#" class="concert">Concerts</a></li>
-          <li><a href="#" class="festival">Festivals</a></li>
-          <li><a href="#" class="musical">Musicals</a></li>
-          <li><a href="#" class="party">Parties</a></li>
-          <li><a href="#" class="play">Plays</a></li>
-          <li><a href="#" class="sport">Sports</a></li>
-          <li><a href="#" class="tour">Tours</a></li>
-        </ul> 
-      </div>
-    </div>
-
-
-  </div>  <!-- /.col-sm-4 -->
-
-
-   <div class="col-sm-4">
-
-    <div class="selectpicker">
-      <button onclick="srCity()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-        <span class="placeholder">Search by City</span>
-        <span class="caret"></span>
-      </button>
-      <div id="myDropdown03" class="dropdown-content">
-        <ul id="filterOptions" class="list-unstyled scrollable-menu">  
-          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-           <div class="clearfix"></div>
-           <br />
-           <li><a href="#" class="all">All Cities</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="al"><h4>Alabama </h4></a></li>
-           <li><a href="#" class="al-birmingham">Birmingham, AL</a></li>
-           <li><a href="#" class="al-huntsville">Huntsville, AL</a></li>
-           <li><a href="#" class="al-mobile">Mobile, AL</a></li>
-           <li><a href="#" class="al-tucaloosa">Tuscaloosa, AL</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="az"><h4>Arizona </h4></a></li>
-           <li><a href="#" class="az-phoenix">Phoenix, AZ</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ar"><h4>Arkansas </h4></a></li>
-           <li><a href="#" class="ar-littlerock">Little Rock, AR</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ca"><h4>California </h4></a></li>
-           <li><a href="#" class="ca-anaheim">Anaheim, CA</a></li>
-           <li><a href="#" class="ca-berkeley">Berkeley, CA</a></li>
-           <li><a href="#" class="ca-losangeles">Los Angeles, CA</a></li>
-           <li><a href="#" class="ca-oakland">Oakland, CA</a></li>
-           <li><a href="#" class="ca-riverside">Riverside, CA</a></li>
-           <li><a href="#" class="ca-sacramento">Sacramento, CA</a></li>
-           <li><a href="#" class="ca-sandiego">San Diego, CA</a></li>
-           <li><a href="#" class="ca-sanfrancisco">San Francisco, CA</a></li>
-           <li><a href="#" class="ca-westhollywood">West Hollywood, CA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="co"><h4>Colorado </h4></a></li>
-           <li><a href="#" class="co-denver">Denver, CO</a></li>
-           <li><a href="#" class="co-englewood">Englewood, CO</a></li>
-           <li><a href="#" class="co-morrison">Morrison, CO</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ct"><h4>Connecticut </h4></a></li>
-           <li><a href="#" class="ct-bridgeport">Bridgeport, CT</a></li>
-           <li><a href="#" class="ct-fairfield">Fairfield, CT</a></li>
-           <li><a href="#" class="ct-newhaven">New Haven, CT</a></li>
-           <li><a href="#" class="ct-ridgefield">Ridgefield, CT</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="fl"><h4>Florida </h4></a></li>
-           <li><a href="#" class="fl-clearwater">Clearwater, FL</a></li>
-           <li><a href="#" class="fl-fortlauderdale">Fort Lauderdale, FL</a></li>
-           <li><a href="#" class="fl-hollywood">Hollywood, FL</a></li>
-           <li><a href="#" class="fl-jacksonville">Jacksonville, FL</a></li>
-           <li><a href="#" class="fl-miami">Miami, FL</a></li>
-           <li><a href="#" class="fl-orlando">Orlando, FL</a></li>
-           <li><a href="#" class="fl-pembrokepines">Pembroke Pines, FL</a></li>
-           <li><a href="#" class="fl-stpetersburg">St Petersburg, FL</a></li>
-           <li><a href="#" class="fl-sunrise">Sunrise, FL</a></li>
-           <li><a href="#" class="fl-tampa">Tampa, FL</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ga"><h4>Georgia </h4></a></li>
-           <li><a href="#" class="ga-alpharetta">Alpharetta, GA</a></li>
-           <li><a href="#" class="ga-atlanta"> Atlanta, GA</a></li>
-           <li><a href="#" class="ga-athens"> Athens, GA</a></li>
-           <li><a href="#" class="ga-augusta"> Augusta, GA</a></li>
-           <li><a href="#" class="ga-columbus">Columbus, GA</a></li>
-           <li><a href="#" class="ga-duluth">Duluth, GA</a></li>
-           <li><a href="#" class="ga-fayetteville,">Fayetteville, GA</a></li>
-           <li><a href="#" class="ga-mableton"> Mableton, GA</a></li>
-           <li><a href="#" class="ga-macon"> Macon, GA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="il"><h4>Illinois </h4></a></li>
-           <li><a href="#" class="il-chicago"> Chicago, IL</a></li>
-           <li><a href="#" class="il-highlandpark"> Highland Park, IL</a></li>
-           <li><a href="#" class="il-rosemont">Rosemont, IL</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="in"><h4>Indiana </h4></a></li>
-           <li><a href="#" class="in-indianapolis"> Indianapolis, IN</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ia"><h4>Iowa </h4></a></li>
-           <li><a href="#" class="ia-cedarrapids">Cedar Rapids, IA</a></li>
-           <li><a href="#" class="ia-desmoines">Des Moines, IA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ky"><h4>Kentuchy </h4></a></li>
-           <li><a href="#" class="ky-louisville"> Louisville, KY</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="la"><h4>Louisiana </h4></a></li>
-           <li><a href="#" class="la-batonrouge"> Baton Rouge, LA</a></li>
-           <li><a href="#" class="la-lafayette">Lafayette, LA</a></li>
-           <li><a href="#" class="la-neworleans">New Orleans, LA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="me"><h4>Maine </h4></a></li>
-           <li><a href="#" class="me-portland">Portland, ME</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="md"><h4>Maryland </h4></a></li>
-           <li><a href="#" class="md-annapolis">Annapolis, MD</a></li>
-           <li><a href="#" class="md-baltimore">Baltimore, MD</a></li>
-           <li><a href="#" class="md-bowie">Bowie, MD</a></li>
-           <li><a href="#" class="md-silverspring">Silver Spring, MD</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ma"><h4>Massachusetts </h4></a></li>
-           <li><a href="#" class="ma-boston">Boston, MA</a></li>
-           <li><a href="#" class="ma-cambridge">Cambridge, MA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="mi"><h4>Michigan </h4></a></li>
-           <li><a href="#" class="mi-detroit">Detroit, MI</a></li>
-           <li><a href="#" class="mi-grandrapids">Grand Rapids, MI</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="mn"><h4>Minnesota </h4></a></li>
-           <li><a href="#" class="mn-stpaul">Saint Paul, MN</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="mo"><h4>Missouri </h4></a></li>
-           <li><a href="#" class="mo-kansascity">Kansas City, MO</a></li>
-           <li><a href="#" class="mo-stlouis">St. Louis, MO</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ms"><h4>Mississippi </h4></a></li>
-           <li><a href="#" class="ms-biloxi">Biloxi, MS</a></li>
-           <li><a href="#" class="ms-jackson">Jackson, MS</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="nh"><h4>New Hampshire </h4></a></li>
-           <li><a href="#" class="nh-gilford">Gilford, NH</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="nj"><h4>New Jersey </h4></a></li>
-           <li><a href="#" class="nj-atlanticcity">Atlantic City, NJ</a></li>
-           <li><a href="#" class="nj-camden">Camden, NJ</a></li>
-           <li><a href="#" class="nj-eastrutherford">East Rutherford, NJ</a></li>
-           <li><a href="#" class="nj-montclair">Montclair, NJ</a></li>
-           <li><a href="#" class="nj-newark"> Newark, NJ</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="nm"><h4>New Mexico </h4></a></li>
-           <li><a href="#" class="nm-albuquerque">Albuquerque, NM</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="nw"><h4>New York </h4></a></li>
-           <li><a href="#" class="ny-albany">Albany, NY</a></li>
-           <li><a href="#" class="ny-brooklyn">Brooklyn, NY</a></li>
-           <li><a href="#" class="ny-newyork">New York, NY</a></li>
-           <li><a href="#" class="ny-rochester">Rochester, NY</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="nv"><h4>Nevada </h4></a></li>
-           <li><a href="#" class="nv-lasvegas">Las Vegas, NV</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="nc"><h4>North Carolina </h4></a></li>
-           <li><a href="#" class="nc-asheville">Asheville, NC</a></li>
-           <li><a href="#" class="nc-charlotte">Charlotte, NC</a></li>
-           <li><a href="#" class="nc-durham"> Durham, NC</a></li>
-           <li><a href="#" class="nc-greensboro"> Greensboro, NC</a></li>
-           <li><a href="#" class="nc-raleigh">Raleigh, NC</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="oh"><h4>Ohio </h4></a></li>
-           <li><a href="#" class="oh-cincinnati"> Cincinnati, OH</a></li>
-           <li><a href="#" class="oh-cleveland">Cleveland, OH</a></li>
-           <li><a href="#" class="oh-columbus"> Columbus, OH</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="or"><h4>Oregon </h4></a></li>
-           <li><a href="#" class="or-portland">Portland, OR</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="pa"><h4>Pennsylvania </h4></a></li>
-           <li><a href="#" class="pa-philadelphia">Philadelphia, PA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="sc"><h4>South Carolina </h4></a></li>
-           <li><a href="#" class="sc-charleston">Charleston, SC</a></li>
-           <li><a href="#" class="sc-columbia">Columbia, SC</a></li>
-           <li><a href="#" class="sc-greenville">Greenville, SC</a></li>
-           <li><a href="#" class="sc-myrtlebeach">Myrtle Beach, SC</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="tn"><h4>Tennessee </h4></a></li>
-           <li><a href="#" class="tn-knoxville">Knoxville, TN</a></li>
-           <li><a href="#" class="tn-memphis">Memphis, TN</a></li>
-           <li><a href="#" class="tn-nashville">Nashville, TN</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="tx"><h4>Texas </h4></a></li>
-           <li><a href="#" class="tx-austin">Austin, TX</a></li>
-           <li><a href="#" class="tx-dallas">Dallas, TX</a></li>
-           <li><a href="#" class="tx-houston">Houston, TX</a></li>
-           <li><a href="#" class="tx-sugarland">Sugar Land, TX</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="ut"><h4>Utah </h4></a></li>
-           <li><a href="#" class="ut-saltlakecity">Salt Lake City, UT</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="va"><h4>Virginia </h4></a></li>
-           <li><a href="#" class="va-alexandria">Alexandria, VA</a></li>
-           <li><a href="#" class="va-norfolk">Norfolk, VA</a></li>
-           <li><a href="#" class="va-richmond">Richmond, VA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="wa"><h4>Washington </h4></a></li>
-           <li><a href="#" class="wa-seattle"> Seattle, WA</a></li>
-           <li><a href="#" class="wa-tacoma">Tacoma, WA</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="wv"><h4>West Virginia </h4></a></li>
-           <li><a href="#" class="wv-charlestown">Charles Town, WV</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="wi"><h4>Wisconsin </h4></a></li>
-           <li><a href="#" class="wi-milwaukee"> Milwaukee, WI</a></li>
-           <li class="divider"></li>
-           <li><a href="#" class="cn"><h4>Canada </h4></a></li>
-           <li><a href="#" class="cn-calgary">Calgary, Canada</a></li>
-           <li><a href="#" class="cn-edmonton">Edmonton, Canada</a></li>
-           <li><a href="#" class="cn-montreal">Montreal, Canada</a></li>
-           <li><a href="#" class="cn-ottawa">Ottawa, Canada</a></li>   
-           <li><a href="#" class="cn-quebec">Quebec, Canada</a></li>  
-           <li><a href="#" class="cn-toronto">Toronto, Canada</a></li>
-           <li><a href="#" class="cn-vancouver">Vancouver, Canada</a></li>
-           <li><a href="#" class="cn-winnipeg">Winnipeg, Canada</a></li>
-        </ul> 
-      </div>
-    </div>
-
-  </div>  <!-- /.col-sm-4 -->
-
-</div>  <!-- /.row -->
-
- <div class="clearfix"></div>
-
-   <br>
+<div class="container">
 
 
 
-<div id="ourHolder" class="row">
+<div class="row">
 
  <!-- /Thumbnail Post Begin -->
     <div class="col-md-3 week month concert">
@@ -1580,24 +1285,18 @@
 
 
 
-
-</div>  <!-- /.row -->
+</div>  <!-- /.row --> 
 
 <!-- Load More Begins -->
 <a href="#" type="button" id="loadMore" class="btn btn-default btn-block"><h4>Load More</h4></a>
 
+</div>
 
-</div>  <!-- /.container -->
-
-
-<div class="clearfix"></div>
-
-   <br>
 
 <script src="./dist/js/jquery-3.2.1.js"></script>
 <script src="./dist/js/bootstrap.min.js"></script>
-<script src="./dist/js/dropdown-selector.js"></script>
 <script src="./dist/js/loader.js"></script>
+
 
 </body>
 </html>

@@ -6,13 +6,13 @@
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./dist/css/style.css">
+  
 
-  <style>
+ <style>
 
 
 
-
-  </style>
+</style>
 
 
 </head>
@@ -20,31 +20,16 @@
 <body>
 
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Home</a></li>
-      <li class="active"><a href="#">Concerts</a></li>
-      <li><a href="sport.html">Sports</a></li>
-      <li><a href="filter.html">Filter Test</a></li>
-    </ul>
-  </div>
-</nav>
+<div class="container"> 
+
+ <div class="clearfix"></div>
+
+   <br>
+
+ <div class="row">  
 
 
-  <div class="container"> 
-
-
-    <div class="clearfix"></div>
-
-    <br>
-
-    <div class="row">
-
-      <div class="col-sm-2"></div>
+  <div class="col-sm-2"></div>
 
       <div class="col-sm-8">
 
@@ -67,688 +52,1552 @@
 
    <div class="col-sm-4">
 
-
-       <div id="bts-ex-1" class="selectpicker">
-          <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-            <span class="placeholder">Select Date</span>
-            <span class="caret"></span>
-        </button>
-        <div class="dropdown-menu">
-            <ul class="list-unstyled">
-              <li class="items" data-value="alldates">All Dates</li>
-              <li class="items" data-value="today">Today</li>
-              <li class="items" data-value="week">This Week</li>
-              <li class="items" data-value="month">This Month</li>
-              <li class="items" data-value="nx-month">Next Month</li>
-              <li class="items" data-value="nx-year">Next Year</li>
-          </ul>
-      </div>
-      <input type="hidden" name="bts-ex-1" value="">
-  </div>
-
-</div>  <!-- /.col-sm-4 -->
-
-<div class="col-sm-4">
-
- <div id="bts-ex-1" class="selectpicker">
-    <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-      <span class="placeholder">Select Show</span>
-      <span class="caret"></span>
-  </button>
-  <div class="dropdown-menu">
-      <ul class="list-unstyled">
-        <li class="items" data-value="concert">All Concerts</li>
-        <li class="items" data-value="country">Country</li>
-        <li class="items" data-value="festival">Festivals</li>
-        <li class="items" data-value="hiphop">Hip Hop</li>
-        <li class="items" data-value="gospel">Gospel</li>
-        <li class="items" data-value="jazz">Jazz</li>
-        <li class="items" data-value="jazz">Latin</li>
-        <li class="items" data-value="musical">Musicals</li> 
-        <li class="items" data-value="pop">Pop</li>
-        <li class="items" data-value="rap">Rap</li>
-        <li class="items" data-value="rnb">R&amp;B</li>
-        <li class="items" data-value="rock">Rock</li>
-        <li class="items" data-value="soul">Soul</li>
-        <li class="items" data-value="tour">Tours</li> 
-    </ul>
-</div>
-<input type="hidden" name="bts-ex-1" value="">
-</div>
-
-</div>  <!-- /.col-sm-4 -->
-
-<div class="col-sm-4">
-
-   <div id="bts-ex-5" class="selectpicker" data-clear="true" data-live="true">
-      <a href="#" class="clear"><span class="fa fa-times"></span><span class="sr-only">Cancel the selection</span></a>
-      <button data-id="prov" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
-        <span class="placeholder">Select by City</span>
+   <div class="selectpicker">  
+      <button onclick="srDate()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+        <span class="placeholder">All Dates</span>
         <span class="caret"></span>
-    </button>
-    <div class="dropdown-menu">
-        <div class="live-filtering" data-clear="true" data-autocomplete="true" data-keys="true">
-          <label class="sr-only" for="input-bts-ex-5">Search by City </label>
-          <div class="search-box">
-            <div class="input-group">
-              <span class="input-group-addon" id="search-icon5">
-                <span class="fa fa-search"></span>
-                <a href="#" class="fa fa-times hide filter-clear"><span class="sr-only">Clear filter</span></a>
-            </span>
-            <input type="text" placeholder="Search in the list" id="input-bts-ex-5" class="form-control live-search" aria-describedby="search-icon5" tabindex="1" />
-        </div>
-    </div>
-    <div class="list-to-filter">
-        <ul class="list-unstyled">
-          <li class="optgroup">
-            <span class="optgroup-header">Alabama <span class="subtext"></span></span>
-            <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="al-birmingham">Birmingham, AL</li>
-              <li class="filter-item items" data-value="al-huntsville">Huntsville, AL</li>
-              <li class="filter-item items" data-value="al-mobile">Mobile, AL</li>
-              <li class="filter-item items" data-value="al-tucaloosa">Tuscaloosa, AL</li>
-          </ul>
-          <span class="optgroup-header">Arizona <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="az-phoenix">Phoenix, AZ</li>
-          </ul>
-          <span class="optgroup-header">Arkansas <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="ar-littlerock">Little Rock, AR</li>
-          </ul>
-          <span class="optgroup-header">California <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="ca-anaheim">Anaheim, CA</li>
-              <li class="filter-item items" data-value="ca-berkeley">Berkeley, CA</li>
-
-              <li class="filter-item items"  data-value="ca-losangeles">Los Angeles, CA</li>
-              <li class="filter-item items" data-value="ca-oakland">Oakland, CA</li>
-              <li class="filter-item items" data-value="ca-riverside">Riverside, CA</li>
-              <li class="filter-item items" data-value="ca-sacramento">Sacramento, CA</li>
-              <li class="filter-item items"  data-value="ca-sandiego">San Diego, CA</li>
-              <li class="filter-item items" data-value="ca-sanfrancisco">San Francisco, CA</li>
-              <li class="filter-item items" data-value="ca-westhollywood">West Hollywood, CA</li>
-
-
-          </ul>
-          <span class="optgroup-header">Colorado <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="co-denver">Denver, CO</li>
-              <li class="filter-item items" data-value="co-englewood">Englewood, CO</li>
-              <li class="filter-item items" data-value="co-morrison">Morrison, CO</li>
-
-          </ul>
-          <span class="optgroup-header">Connecticut <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="ct-bridgeport">Bridgeport, CT</li>
-              <li class="filter-item items"  data-value="ct-fairfield">Fairfield, CT</li>
-              <li class="filter-item items"  data-value="ct-newhaven">New Haven, CT</li>
-
-              <li class="filter-item items" data-value="ct-ridgefield">Ridgefield, CT</li>
-
-          </ul>
-          <span class="optgroup-header">Florida <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="fl-clearwater">Clearwater, FL</li>
-              <li class="filter-item items" data-value="fl-fortlauderdale">Fort Lauderdale, FL</li>
-              <li class="filter-item items" data-value="fl-hollywood">Hollywood, FL</li>
-              <li class="filter-item items" data-value="fl-jacksonville">Jacksonville, FL</li>
-
-
-              <li class="filter-item items" data-value="fl-miami">Miami, FL</li>
-              <li class="filter-item items" data-value="fl-orlando">Orlando, FL</li>
-
-              <li class="filter-item items"  data-value="fl-pembrokepines">Pembroke Pines, FL</li>
-              <li class="filter-item items" data-value="fl-pontevedrabeach">Ponte Vedra Beach, FL</li>
-
-              <li class="filter-item items"  data-value="fl-stpetersburg">St Petersburg, FL</li>
-              <li class="filter-item items" data-value="fl-sunrise">Sunrise, FL</li>
-              <li class="filter-item items" data-value="fl-tampa">Tampa, FL</li>
-          </ul>
-          <span class="optgroup-header">Georgia <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-
-              <li class="filter-item items" data-value="ga-alpharetta">Alpharetta, GA</li>
-
-              <li class="filter-item items"  data-value="ga-atlanta"> Atlanta, GA</li>
-              <li class="filter-item items" data-value="ga-augusta"> Augusta, GA</li>
-
-              <li class="filter-item items" data-value="ga-columbus">Columbus, GA</li>
-              <li class="filter-item items" data-value="ga-duluth">Duluth, GA</li>
-              <li class="filter-item items" data-value="ga-fayetteville,">Fayetteville, GA</li>
-              <li class="filter-item items" data-value="ga-mableton"> Mableton, GA</li>
-
-              <li class="filter-item items" data-value="ga-macon"> Macon, GA</li>
-
-
-          </ul>
-          <span class="optgroup-header">Illinois <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-
-              <li class="filter-item items"  data-value="il-chicago"> Chicago, IL</li>
-
-              <li class="filter-item items" data-value="il-highlandpark"> Highland Park, IL</li>
-              <li class="filter-item items" data-value="il-rosemont">Rosemont, IL</li>
-
-          </ul>
-          <span class="optgroup-header">Indiana <span class="subtext"></span></span>
-
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="in-indianapolis"> Indianapolis, IN</li>
-          </ul>
-          <span class="optgroup-header">Iowa <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-
-              <li class="filter-item items" data-value="ia-cedarrapids">Cedar Rapids, IA</li>
-              <li class="filter-item items"  data-value="ia-desmoines">Des Moines, IA</li>
-
-
-
-          </ul>
-          <span class="optgroup-header">Kentuchy <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="ky-louisville"> Louisville, KY</li>
-          </ul>
-          <span class="optgroup-header">Louisiana <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="la-batonrouge"> Baton Rouge, LA</li>
-
-              <li class="filter-item items" data-value="la-lafayette">Lafayette, LA</li>
-              <li class="filter-item items" data-value="la-neworleans">New Orleans, LA</li>
-
-          </ul>
-          <span class="optgroup-header">Maine <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="me-portland">Portland, ME</li>
-          </ul>
-          <span class="optgroup-header">Maryland <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-
-              <li class="filter-item items" data-value="md-annapolis">Annapolis, MD</li>
-              <li class="filter-item items"  data-value="md-baltimore">Baltimore, MD</li>
-              <li class="filter-item items" data-value="md-bowie">Bowie, MD</li>
-              <li class="filter-item items" data-value="md-silverspring">Silver Spring, MD</li>
-
-
-          </ul>
-          <span class="optgroup-header">Massachusetts <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="ma-boston">Boston, MA</li>
-              <li class="filter-item items" data-value="ma-cambridge">Cambridge, MA</li>
-          </ul>
-          <span class="optgroup-header">Michigan <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="mi-detroit">Detroit, MI</li>
-              <li class="filter-item items" data-value="mi-grandrapids">Grand Rapids, MI</li>
-          </ul>
-          <span class="optgroup-header">Minnesota <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="mn-stpaul">Saint Paul, MN</li>
-          </ul>
-          <span class="optgroup-header">Missouri <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="mo-kansascity">Kansas City, MO</li>
-              <li class="filter-item items"  data-value="mo-stlouis">St. Louis, MO</li>
-
-          </ul>
-          <span class="optgroup-header">Mississippi <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="ms-biloxi">Biloxi, MS</li>
-              <li class="filter-item items" data-value="ms-jackson">Jackson, MS</li>
-          </ul>
-          <span class="optgroup-header">New Hampshire <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="nh-gilford">Gilford, NH</li>
-          </ul>
-          <span class="optgroup-header">New Jersey <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-
-              <li class="filter-item items" data-value="nj-atlanticcity">Atlantic City, NJ</li>
-              <li class="filter-item items"  data-value="nj-camden">Camden, NJ</li>
-              <li class="filter-item items" data-value="nj-eastrutherford">East Rutherford, NJ</li>
-
-              <li class="filter-item items" data-value="nj-montclair">Montclair, NJ</li>
-
-
-              <li class="filter-item items" data-value="nj-newark"> Newark, NJ</li>
-
-          </ul>
-          <span class="optgroup-header">New Mexico <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="nm-albuquerque">Albuquerque, NM</li>
-          </ul>
-          <span class="optgroup-header">New York <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-
-              <li class="filter-item items" data-value="ny-albany">Albany, NY</li>
-
-              <li class="filter-item items" data-value="ny-brooklyn">Brooklyn, NY</li>
-              <li class="filter-item items"  data-value="ny-newyork">New York, NY</li>
-
-              <li class="filter-item items" data-value="ny-niagarafalls">Niagara Falls, NY</li>
-              <li class="filter-item items" data-value="ny-rochester">Rochester, NY</li>
-
-          </ul>
-          <span class="optgroup-header">Nevada <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="nv-lasvegas">Las Vegas, NV</li>
-          </ul>
-          <span class="optgroup-header">New Jersey <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="nj-newark">Newark, NJ</li>
-              <li class="filter-item items" data-value="nj-montclair">Montclair, NJ</li>
-          </ul>
-          <span class="optgroup-header">North Carolina <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-
-              <li class="filter-item items" data-value="nc-asheville">Asheville, NC</li>
-              <li class="filter-item items"  data-value="nc-charlotte">Charlotte, NC</li>
-
-              <li class="filter-item items" data-value="nc-durham"> Durham, NC</li>
-              <li class="filter-item items" data-value="nc-greensboro"> Greensboro, NC</li>
-              <li class="filter-item items" data-value="nc-raleigh">Raleigh, NC</li>
-          </ul>
-          <span class="optgroup-header">Ohio <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="oh-cincinnati"> Cincinnati, OH</li>
-              <li class="filter-item items" data-value="oh-cleveland">Cleveland, OH</li>
-              <li class="filter-item items" data-value="oh-columbus"> Columbus, OH</li>
-
-          </ul>
-          <span class="optgroup-header">Oregon <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="or-portland">Portland, OR</li>
-          </ul>
-          <span class="optgroup-header">Pennsylvania <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="pa-philadelphia">Philadelphia, PA</li>
-          </ul>
-          <span class="optgroup-header">South Carolina <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="sc-charleston">Charleston, SC</li>
-              <li class="filter-item items"  data-value="sc-columbia">Columbia, SC</li>
-
-              <li class="filter-item items" data-value="sc-greenville">Greenville, SC</li>
-              <li class="filter-item items" data-value="sc-myrtlebeach">North Myrtle Beach, SC</li>
-
-
-          </ul>
-
-          <span class="optgroup-header">Tennessee <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="tn-knoxville">Knoxville, TN</li>
-
-              <li class="filter-item items" data-value="tn-memphis">Memphis, TN</li>
-              <li class="filter-item items" data-value="tn-nashville">Nashville, TN</li>
-          </ul>
-          <span class="optgroup-header">Texas <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="tx-austin">Austin, TX</li>
-              <li class="filter-item items" data-value="tx-dallas">Dallas, TX</li>
-
-              <li class="filter-item items" data-value="tx-houston">Houston, TX</li>
-              <li class="filter-item items" data-value="tx-sugarland">Sugar Land, TX</li>
-          </ul>
-          <span class="optgroup-header">Utah <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="ut-saltlakecity">Salt Lake City, UT</li>
-          </ul>
-
-          <span class="optgroup-header">Virginia <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="va-alexandria">Alexandria, VA</li>
-              <li class="filter-item items"  data-value="va-norfolk">Norfolk, VA</li>
-              <li class="filter-item items" data-value="va-richmond">Richmond, VA</li>
-
-          </ul>
-          <span class="optgroup-header">Washington <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items"  data-value="wa-seattle"> Seattle, WA</li>
-              <li class="filter-item items" data-value="wa-tacoma">Tacoma, WA</li>
-          </ul>
-          <span class="optgroup-header">West Virginia <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="wv-charlestown">Charles Town, WV</li>
-          </ul>
-          <span class="optgroup-header">Wisconsin <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="wi-milwaukee"> Milwaukee, WI</li>
-          </ul>
-
-          <span class="optgroup-header">Canada <span class="subtext"></span></span>
-          <ul class="list-unstyled">
-              <li class="filter-item items" data-value="cn-calgary">Calgary, Canada</li>
-              <li class="filter-item items" data-value="cn-edmonton">Edmonton, Canada</li>
-              <li class="filter-item items" data-value="cn-montreal">Montreal, Canada</li>
-              <li class="filter-item items" data-value="cn-ottawa">Ottawa, Canada</li>   
-
-              <li class="filter-item items" data-value="cn-quebec">Quebec, Canada</li>  
-
-              <li class="filter-item items" data-value="cn-toronto">Toronto, Canada</li>
-              <li class="filter-item items" data-value="cn-vancouver">Vancouver, Canada</li>
-
-
-              <li class="filter-item items" data-value="cn-winnipeg">Winnipeg, Canada</li>
-
-          </ul>
-      </li>
-  </ul>
-  <div class="no-search-results">
-      <div class="alert alert-warning" role="alert"><i class="fa fa-warning margin-right-sm"></i>No entry for <strong>'<span></span>'</strong> was found.</div>
-  </div>
-</div>
-</div>
-</div>
-<input type="hidden" name="bts-ex-5" value="">
-</div>
-
-
-</div>   <!-- /.col-sm-4 -->
-</div> <!-- /.row -->
-
-<div class="row">
-
-  <div class="clearfix"></div>
-
-  <br>
-
-  <div class="thumbnails gallery">
-
-    <!-- /Thumbnail Post Begin -->
-    <div class="col-md-3" data-tag="today week pop nc-charlotte">
-      <a href="#">
-        <div class="thumbnail">
-          <img class="img-responsive" src="./img/sheryl-crow400.jpg">    
-          <div class="caption">
-            <div class="row">
-              <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
-              <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
-                <h5 class="item-city"> Charlotte, NC</h5></div>
-
-            </div>
-        </div>
-    </div>
-</a>
-</div>  <!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
-
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="week month rap tn-memphis">
-    <a href="#">
-      <div class="thumbnail">
-        <img class="img-responsive" alt="" src="./img/travis-scott400.jpg" />
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>20</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Travis Scott </h5><h5 class="item-city"> Memphis, TN</h5></div>
-
-         </div>
-     </div>
- </div>
-</a>
-</div>
-</div> <!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
-
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="month hiphop fl-miami">
-    <a href="#">
-      <div class="thumbnail">
-        <img class="img-responsive" alt="" src="./img/billy-joel400.jpg" /> 
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Billy Joel </h5>
-                <h5 class="item-city"> Miami, FL</h5></div>
-            </div>
-        </div>
-    </div>
-</a>
-</div>  <!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
-
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="week month rnb tour">
- <a href="#"> 
-    <div class="thumbnail">
-      <img class="img-responsive" src="./img/chris-brown400.jpg">
-      <div class="caption tour-alert">
-         <div class="row">
-           <div class="col-xs-12"><h5 class="item-tour"> Chris Brown: The Party Tour </h5>
-              <h5 class="item-sale"> On Sale Now </h5></div>
-          </div>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <ul id="filterOptions" class="list-unstyled">  
+          <div class="clearfix"></div>
+           <br />
+          <li><a href="#" class="all">All Dates</a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="recent">Recently Added</a></li>
+          <li><a href="#" class="week">This Week</a></li>
+          <li><a href="#" class="nx-week">Next Week</a></li>
+          <li><a ref="#" class="month">This Month</a></li>
+          <li><a href="#" class="nx-month">Next Month</a></li>
+          <li><a href="#" class="nx-year">Next Year</a></li>
+        </ul> 
       </div>
-  </div>
-</a>
-</div>  <!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+    </div>
 
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-month soul il-chicago">
-  <a href="#">
-    <div class="thumbnail">
-      <img class="img-responsive" src="./img/chris-rock400.jpg">  
-      <div class="caption">
-        <div class="row">
-           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-           <div class="col-xs-9"><h5 class="item-artist"> Chris Rock </h5><h5 class="item-city"> Chicago, IL</h5></div>
-       </div>
-   </div>
-</div>
-</a>
-</div> <!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+  </div>  <!-- /.col-sm-4 -->
 
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-year rock tn-nashville">
-  <a href="#">
-    <div class="thumbnail">
-      <img class="img-responsive" alt="" src="./img/ti400.jpg" />  
-      <div class="caption">
-        <div class="row">
-           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-           <div class="col-xs-9"><h5 class="item-artist"> T.I. </h5><h5 class="item-city"> Nashville, TN</h5></div>
-       </div>
-   </div>
-</div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
 
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="today week jazz wv-charlestown">
-   <a href="#">
+  <div class="col-sm-4">
+
+    <!-- /.Concert Search -->
+
+    <div class="selectpicker">
+      <button onclick="srCategory()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+        <span class="placeholder">All Shows</span>
+        <span class="caret"></span>
+      </button>
+      <div id="myDropdown02" class="dropdown-content">
+        <ul id="filterOptions" class="list-unstyled">  
+          <div class="clearfix"></div>
+           <br />
+          <li><a href="#" class="all">All Shows </a></li>
+          <li class="divider"></li>
+          <li><a href="#" class="country">Country</a></li>
+          <li><a href="#" class="festival">Festivals</a></li>
+          <li><a href="#" class="gospel">Gospel</a></li>
+          <li><a href="#" class="hiphop">Hip Hop</a></li>
+          <li><a href="#" class="jazz">Jazz</a></li>
+          <li><a href="#" class="latin">Latin</a></li>
+          <li><a href="#" class="rnb">R&amp;B</a></li>
+          <li><a href="#" class="pop">Pop</a></li>
+          <li><a href="#" class="rap">Rap</a></li>
+          <li><a href="#" class="rnb">R&amp;B</a></li>
+          <li><a href="#" class="rock">Rock</a></li>
+          <li><a href="#" class="soul">Soul</a></li>
+          <li><a href="#" class="tour">Tours</a></li>
+        </ul> 
+      </div>
+    </div>
+
+  </div>  <!-- /.col-sm-4 -->
+
+
+   <div class="col-sm-4">
+
+    <div class="selectpicker">
+      <button onclick="srCity()" type="button" class="btn btn-lg btn-block btn-default dropdown-toggle">
+        <span class="placeholder">All Cities</span>
+        <span class="caret"></span>
+      </button>
+      <div id="myDropdown03" class="dropdown-content">
+        <ul id="filterOptions" class="list-unstyled scrollable-menu">  
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+           <div class="clearfix"></div>
+           <br />
+           <li><a href="#" class="all">All Cities</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="al"><h4>Alabama </h4></a></li>
+           <li><a href="#" class="al-birmingham">Birmingham, AL</a></li>
+           <li><a href="#" class="al-huntsville">Huntsville, AL</a></li>
+           <li><a href="#" class="al-mobile">Mobile, AL</a></li>
+           <li><a href="#" class="al-tucaloosa">Tuscaloosa, AL</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="az"><h4>Arizona </h4></a></li>
+           <li><a href="#" class="az-phoenix">Phoenix, AZ</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ar"><h4>Arkansas </h4></a></li>
+           <li><a href="#" class="ar-littlerock">Little Rock, AR</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ca"><h4>California </h4></a></li>
+           <li><a href="#" class="ca-anaheim">Anaheim, CA</a></li>
+           <li><a href="#" class="ca-berkeley">Berkeley, CA</a></li>
+           <li><a href="#" class="ca-losangeles">Los Angeles, CA</a></li>
+           <li><a href="#" class="ca-oakland">Oakland, CA</a></li>
+           <li><a href="#" class="ca-riverside">Riverside, CA</a></li>
+           <li><a href="#" class="ca-sacramento">Sacramento, CA</a></li>
+           <li><a href="#" class="ca-sandiego">San Diego, CA</a></li>
+           <li><a href="#" class="ca-sanfrancisco">San Francisco, CA</a></li>
+           <li><a href="#" class="ca-westhollywood">West Hollywood, CA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="co"><h4>Colorado </h4></a></li>
+           <li><a href="#" class="co-denver">Denver, CO</a></li>
+           <li><a href="#" class="co-englewood">Englewood, CO</a></li>
+           <li><a href="#" class="co-morrison">Morrison, CO</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ct"><h4>Connecticut </h4></a></li>
+           <li><a href="#" class="ct-bridgeport">Bridgeport, CT</a></li>
+           <li><a href="#" class="ct-fairfield">Fairfield, CT</a></li>
+           <li><a href="#" class="ct-newhaven">New Haven, CT</a></li>
+           <li><a href="#" class="ct-ridgefield">Ridgefield, CT</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="fl"><h4>Florida </h4></a></li>
+           <li><a href="#" class="fl-clearwater">Clearwater, FL</a></li>
+           <li><a href="#" class="fl-fortlauderdale">Fort Lauderdale, FL</a></li>
+           <li><a href="#" class="fl-hollywood">Hollywood, FL</a></li>
+           <li><a href="#" class="fl-jacksonville">Jacksonville, FL</a></li>
+           <li><a href="#" class="fl-miami">Miami, FL</a></li>
+           <li><a href="#" class="fl-orlando">Orlando, FL</a></li>
+           <li><a href="#" class="fl-pembrokepines">Pembroke Pines, FL</a></li>
+           <li><a href="#" class="fl-stpetersburg">St Petersburg, FL</a></li>
+           <li><a href="#" class="fl-sunrise">Sunrise, FL</a></li>
+           <li><a href="#" class="fl-tampa">Tampa, FL</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ga"><h4>Georgia </h4></a></li>
+           <li><a href="#" class="ga-alpharetta">Alpharetta, GA</a></li>
+           <li><a href="#" class="ga-atlanta"> Atlanta, GA</a></li>
+           <li><a href="#" class="ga-athens"> Athens, GA</a></li>
+           <li><a href="#" class="ga-augusta"> Augusta, GA</a></li>
+           <li><a href="#" class="ga-columbus">Columbus, GA</a></li>
+           <li><a href="#" class="ga-duluth">Duluth, GA</a></li>
+           <li><a href="#" class="ga-fayetteville,">Fayetteville, GA</a></li>
+           <li><a href="#" class="ga-mableton"> Mableton, GA</a></li>
+           <li><a href="#" class="ga-macon"> Macon, GA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="il"><h4>Illinois </h4></a></li>
+           <li><a href="#" class="il-chicago"> Chicago, IL</a></li>
+           <li><a href="#" class="il-highlandpark"> Highland Park, IL</a></li>
+           <li><a href="#" class="il-rosemont">Rosemont, IL</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="in"><h4>Indiana </h4></a></li>
+           <li><a href="#" class="in-indianapolis"> Indianapolis, IN</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ia"><h4>Iowa </h4></a></li>
+           <li><a href="#" class="ia-cedarrapids">Cedar Rapids, IA</a></li>
+           <li><a href="#" class="ia-desmoines">Des Moines, IA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ky"><h4>Kentuchy </h4></a></li>
+           <li><a href="#" class="ky-louisville"> Louisville, KY</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="la"><h4>Louisiana </h4></a></li>
+           <li><a href="#" class="la-batonrouge"> Baton Rouge, LA</a></li>
+           <li><a href="#" class="la-lafayette">Lafayette, LA</a></li>
+           <li><a href="#" class="la-neworleans">New Orleans, LA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="me"><h4>Maine </h4></a></li>
+           <li><a href="#" class="me-portland">Portland, ME</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="md"><h4>Maryland </h4></a></li>
+           <li><a href="#" class="md-annapolis">Annapolis, MD</a></li>
+           <li><a href="#" class="md-baltimore">Baltimore, MD</a></li>
+           <li><a href="#" class="md-bowie">Bowie, MD</a></li>
+           <li><a href="#" class="md-silverspring">Silver Spring, MD</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ma"><h4>Massachusetts </h4></a></li>
+           <li><a href="#" class="ma-boston">Boston, MA</a></li>
+           <li><a href="#" class="ma-cambridge">Cambridge, MA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="mi"><h4>Michigan </h4></a></li>
+           <li><a href="#" class="mi-detroit">Detroit, MI</a></li>
+           <li><a href="#" class="mi-grandrapids">Grand Rapids, MI</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="mn"><h4>Minnesota </h4></a></li>
+           <li><a href="#" class="mn-stpaul">Saint Paul, MN</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="mo"><h4>Missouri </h4></a></li>
+           <li><a href="#" class="mo-kansascity">Kansas City, MO</a></li>
+           <li><a href="#" class="mo-stlouis">St. Louis, MO</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ms"><h4>Mississippi </h4></a></li>
+           <li><a href="#" class="ms-biloxi">Biloxi, MS</a></li>
+           <li><a href="#" class="ms-jackson">Jackson, MS</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="nh"><h4>New Hampshire </h4></a></li>
+           <li><a href="#" class="nh-gilford">Gilford, NH</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="nj"><h4>New Jersey </h4></a></li>
+           <li><a href="#" class="nj-atlanticcity">Atlantic City, NJ</a></li>
+           <li><a href="#" class="nj-camden">Camden, NJ</a></li>
+           <li><a href="#" class="nj-eastrutherford">East Rutherford, NJ</a></li>
+           <li><a href="#" class="nj-montclair">Montclair, NJ</a></li>
+           <li><a href="#" class="nj-newark"> Newark, NJ</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="nm"><h4>New Mexico </h4></a></li>
+           <li><a href="#" class="nm-albuquerque">Albuquerque, NM</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="nw"><h4>New York </h4></a></li>
+           <li><a href="#" class="ny-albany">Albany, NY</a></li>
+           <li><a href="#" class="ny-brooklyn">Brooklyn, NY</a></li>
+           <li><a href="#" class="ny-newyork">New York, NY</a></li>
+           <li><a href="#" class="ny-rochester">Rochester, NY</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="nv"><h4>Nevada </h4></a></li>
+           <li><a href="#" class="nv-lasvegas">Las Vegas, NV</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="nc"><h4>North Carolina </h4></a></li>
+           <li><a href="#" class="nc-asheville">Asheville, NC</a></li>
+           <li><a href="#" class="nc-charlotte">Charlotte, NC</a></li>
+           <li><a href="#" class="nc-durham"> Durham, NC</a></li>
+           <li><a href="#" class="nc-greensboro"> Greensboro, NC</a></li>
+           <li><a href="#" class="nc-raleigh">Raleigh, NC</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="oh"><h4>Ohio </h4></a></li>
+           <li><a href="#" class="oh-cincinnati"> Cincinnati, OH</a></li>
+           <li><a href="#" class="oh-cleveland">Cleveland, OH</a></li>
+           <li><a href="#" class="oh-columbus"> Columbus, OH</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="or"><h4>Oregon </h4></a></li>
+           <li><a href="#" class="or-portland">Portland, OR</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="pa"><h4>Pennsylvania </h4></a></li>
+           <li><a href="#" class="pa-philadelphia">Philadelphia, PA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="sc"><h4>South Carolina </h4></a></li>
+           <li><a href="#" class="sc-charleston">Charleston, SC</a></li>
+           <li><a href="#" class="sc-columbia">Columbia, SC</a></li>
+           <li><a href="#" class="sc-greenville">Greenville, SC</a></li>
+           <li><a href="#" class="sc-myrtlebeach">Myrtle Beach, SC</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="tn"><h4>Tennessee </h4></a></li>
+           <li><a href="#" class="tn-knoxville">Knoxville, TN</a></li>
+           <li><a href="#" class="tn-memphis">Memphis, TN</a></li>
+           <li><a href="#" class="tn-nashville">Nashville, TN</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="tx"><h4>Texas </h4></a></li>
+           <li><a href="#" class="tx-austin">Austin, TX</a></li>
+           <li><a href="#" class="tx-dallas">Dallas, TX</a></li>
+           <li><a href="#" class="tx-houston">Houston, TX</a></li>
+           <li><a href="#" class="tx-sugarland">Sugar Land, TX</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="ut"><h4>Utah </h4></a></li>
+           <li><a href="#" class="ut-saltlakecity">Salt Lake City, UT</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="va"><h4>Virginia </h4></a></li>
+           <li><a href="#" class="va-alexandria">Alexandria, VA</a></li>
+           <li><a href="#" class="va-norfolk">Norfolk, VA</a></li>
+           <li><a href="#" class="va-richmond">Richmond, VA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="wa"><h4>Washington </h4></a></li>
+           <li><a href="#" class="wa-seattle"> Seattle, WA</a></li>
+           <li><a href="#" class="wa-tacoma">Tacoma, WA</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="wv"><h4>West Virginia </h4></a></li>
+           <li><a href="#" class="wv-charlestown">Charles Town, WV</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="wi"><h4>Wisconsin </h4></a></li>
+           <li><a href="#" class="wi-milwaukee"> Milwaukee, WI</a></li>
+           <li class="divider"></li>
+           <li><a href="#" class="cn"><h4>Canada </h4></a></li>
+           <li><a href="#" class="cn-calgary">Calgary, Canada</a></li>
+           <li><a href="#" class="cn-edmonton">Edmonton, Canada</a></li>
+           <li><a href="#" class="cn-montreal">Montreal, Canada</a></li>
+           <li><a href="#" class="cn-ottawa">Ottawa, Canada</a></li>   
+           <li><a href="#" class="cn-quebec">Quebec, Canada</a></li>  
+           <li><a href="#" class="cn-toronto">Toronto, Canada</a></li>
+           <li><a href="#" class="cn-vancouver">Vancouver, Canada</a></li>
+           <li><a href="#" class="cn-winnipeg">Winnipeg, Canada</a></li>
+        </ul> 
+      </div>
+    </div>
+
+  </div>  <!-- /.col-sm-4 -->
+
+</div>  <!-- /.row -->
+
+ <div class="clearfix"></div>
+
+   <br>
+
+
+
+<div id="ourHolder" class="row">
+
+ <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month concert hiphop">
+     <a href="#"> 
       <div class="thumbnail">
-        <img class="img-responsive" alt="" src="./img/smino400.jpg" />   
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Smino </h5><h5 class="item-city"> Charles Town, WV</h5></div>
-         </div>
-     </div>
- </div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <img class="img-responsive" src="./img/ub40400.jpg">  
+        <div class="caption tour-alert"> 
+         <div class="row"> 
+          <div class="col-xs-12">
+            <h5 class="item-tour"> Artist Name </h5>
+            <h5 class="item-sale"> On Sale Now </h5>
+          </div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
 <!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="today week month rap ga-atlanta">
-  <a href="#">
-    <div class="thumbnail">
-      <img class="img-responsive" alt="" src="./img/rick-ross400.jpg" /> 
-      <div class="caption">
-        <div class="row">
-           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-           <div class="col-xs-9"><h5 class="item-artist"> Rick Ross  </h5><h5 class="item-city"> Atlanta, GA</h5></div>
-       </div>
-   </div>
-</div>
-</a>
-</div> <!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
-
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="today week rap ms-jackson">
-   <a href="#">
+    <div class="col-md-3 week month concert hiphop tour ca ca-sacramento">
+     <a href="#"> 
       <div class="thumbnail">
-         <img class="img-responsive" alt="" src="./img/diana-ross400.jpg" />  
-         <div class="caption">
-            <div class="row">
-               <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-               <div class="col-xs-9"><h5 class="item-artist"> Diana Ross </h5><h5 class="item-city"> Jackson, MS</h5></div>
-           </div>
-       </div>
-   </div>
-</a>
-</div> <!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <img class="img-responsive" src="./img/travis-scott400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> San Francisco, CA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="week month rnb hiphop ga-atlanta">
-  <a href="#">
-    <div class="thumbnail">
-      <img class="img-responsive" alt="" src="./img/jerry-seinfeld400.jpg" />   
-      <div class="caption">
-        <div class="row">
-           <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-           <div class="col-xs-9"><h5 class="item-artist"> Teddy Riley </h5><h5 class="item-city"> Atlanta, GA</h5></div>
-       </div>
-   </div>
-</div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
 
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-week month soul la-neworleans">
-   <a href="#">
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month rnb">
+     <a href="#"> 
       <div class="thumbnail">
-        <img class="img-responsive" src="./img/leela-james400.jpg">   
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Leela James </h5><h5 class="item-city"> New Orleans, LA </h5></div>
-         </div>
-     </div>
- </div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <img class="img-responsive" src="./img/suitelifefridays450.jpg">    
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Charlotte, NC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-year rap ga-atlanta">
-   <a href="#">
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month latin al al-tucaloosa">
+     <a href="#"> 
       <div class="thumbnail">
-        <img class="img-responsive" src="./img/anthony-hamilton400.jpg">  
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Anthony Hamilton  </h5><h5 class="item-city"> Atlanta, GA</h5></div>
-         </div>
-     </div>
- </div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <img class="img-responsive" src="./img/stephanie-mills400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Tuscaloosa, AL</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
-
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-year jazz la-neworleans">
-   <a href="#">
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-week month concert hiphop az az-phoenix">
+     <a href="#"> 
       <div class="thumbnail">
-        <img class="img-responsive" src="./img/a-tribe-called-quest400.jpg">  
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> A Tribe Called Quest  </h5><h5 class="item-city"> New Orleans, LA</h5></div>
-         </div>
-     </div>
- </div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <img class="img-responsive" src="./img/smino400.jpg">   
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Phoenix, AZ</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-year rnb ms-jackson">
-   <a href="#">
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month festival tour co co-denver">
+     <a href="#"> 
+      <div class="thumbnail">
+       <img class="img-responsive" src="./img/sheryl-crow400.jpg">   
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Denver, CO</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year rock fl fl-miami">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/sc-football.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Miami, FL</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month jazz ga ga-atlanta">
+     <a href="#"> 
       <div class="thumbnail">
         <img class="img-responsive" src="./img/sabrina-carpenter400.jpg">  
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Alabama Crimson Tide   </h5><h5 class="item-city"> Jackson, MS</h5></div>
-         </div>
-     </div>
- </div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
-
-<!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-year rap ms-jackson">
-   <a href="#">
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month concert hiphop festival tour il il-chicago">
+     <a href="#"> 
       <div class="thumbnail">
-        <img class="img-responsive" src="./img/anthony-hamilton400.jpg">  
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Anthony Hamilton  </h5><h5 class="item-city"> Jackson, MS</h5></div>
-         </div>
-     </div>
- </div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <img class="img-responsive" src="./img/ken-ford400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Chicago, IL</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
+
+   <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year concert hiphop festival tour">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/rick-ross400.jpg">  
+        <div class="caption tour-alert"> 
+         <div class="row"> 
+          <div class="col-xs-12">
+            <h5 class="item-tour"> Artist Name </h5>
+            <h5 class="item-sale"> On Sale Now </h5>
+          </div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
 <!-- /Thumbnail Post Begin -->
-<div class="col-md-3" data-tag="nx-year rnb soul ms-jackson">
-   <a href="#">
+    <div class="col-md-3 nx-week month jazz la la-neworleans">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ms-football.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> New Orleans, LA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month concert hiphop festival tour md md-baltimore">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/leela-james400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Baltimore, MD</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month rnb country tour ma ma-boston">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/kindred-the-family-soul400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Boston, MA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year rock mi mi-detroit">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/kendrick-lamar400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Detroit, MI</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year jazz ms ms-jackson">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/jerry-seinfeld400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Jackson, MS</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-week month concert hiphop festival nj nj-atlanticcity">
+     <a href="#"> 
+      <div class="thumbnail">
+       <img class="img-responsive" src="./img/chris-brown400.jpg"> 
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlantic City, NJ</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month latin tour ny ny-newyork">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/enrique-iglesias400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> New York, NY</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month festival tour nv nv-lasvegas">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/diana-ross400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Las Vegas, NV</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+   <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year rock nc nc-charlotte">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-rock400.jpg">  
+        <div class="caption tour-alert"> 
+         <div class="row"> 
+          <div class="col-xs-12">
+            <h5 class="item-tour"> Artist Name </h5>
+            <h5 class="item-sale"> On Sale Now </h5>
+          </div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month concert hiphop tour nc nc-raleigh">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-brown400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Raleigh, NC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month country tour pa pa-philadelphia">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/cedric-entertainer400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Philadelphia, PA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month jazz sc sc-columbia">
+     <a href="#"> 
       <div class="thumbnail">
         <img class="img-responsive" src="./img/brandy400.jpg">  
-        <div class="caption">
-          <div class="row">
-             <div class="col-xs-3"><h4 class="item-date"> JUN <span>23</span> </h4></div>
-             <div class="col-xs-9"><h5 class="item-artist"> Brandy  </h5><h5 class="item-city"> Jackson, MS</h5></div>
-         </div>
-     </div>
- </div>
-</a>
-</div><!-- .col-md-3 -->
-<!-- /Thumbnail Post End -->
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Columbia, SC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month concert hiphop festival tour tn tn-nashville">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/billy-joel400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Nashville, TN</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month country tour tn tn-memphis">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/anthony-hamilton400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Memphis, TN</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year latin tour tx tx-dallas">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/al-football.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Dallas, TX</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month concert hiphop festival tx tx-houston">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/a-tribe-called-quest400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Houston, TX</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month rnb tour va va-richmond">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/leela-james400.jpg">  
+        <div class="caption tour-alert"> 
+         <div class="row"> 
+          <div class="col-xs-12">
+            <h5 class="item-tour"> Artist Name </h5>
+            <h5 class="item-sale"> On Sale Now </h5>
+          </div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+   <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year jazz wa wa-seattle">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ms-football.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Seattle, WA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month country tour cn cn-montreal">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/brandy400.jpg">
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Montreal, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
 
-</div>
-<div class="push"></div>
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-week month tour concert hiphop cn cn-quebec">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/kendrick-lamar400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Quebec, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
 
-<!-- Load More Begins -->
-<div class="row"><button type="button" class="btn btn-default btn-block"><h4>Load More</h4></button></div>
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month rock cn cn-toronto">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/kindred-the-family-soul400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Toronto, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-year festival tour cn cn-vancouver">
+     <a href="#"> 
+      <div class="thumbnail">
+         <img class="img-responsive" src="./img/billy-joel400.jpg">   
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Vancouver, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-week month jazz al al-birmingham">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ken-ford400.jpg">  
+        <div class="caption tour-alert"> 
+         <div class="row"> 
+          <div class="col-xs-12">
+            <h5 class="item-tour"> Artist Name </h5>
+            <h5 class="item-sale"> On Sale Now </h5>
+          </div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month latin ca ca-sandiego">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-rock400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> San Diego, CA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-week month concert hiphop ct ct-newhaven">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-brown400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> New Haven, CT</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year rock ga ga-augusta">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ken-ford400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Augusta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month tour jazz ga ga-macon">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/travis-scott400.jpg"> 
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Macon, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year rnb festival il il-chicago">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ub40400.jpg"> 
+        <div class="caption tour-alert"> 
+         <div class="row"> 
+          <div class="col-xs-12">
+            <h5 class="item-tour"> Artist Name </h5>
+            <h5 class="item-sale"> On Sale Now </h5>
+          </div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month festival tour in in-indianapolis">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/suitelifefridays450.jpg"> 
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Indianapolis, IN</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month latin country la la-batonrouge">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/brandy400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Baton Rouge, LA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month latin country la la-neworleans">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/billy-joel400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> New Orleans, LA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year festival md md-baltimore">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ub40400.jpg"> 
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Baltimore, MD</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month concert hiphop tour ma ma-cambridge">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/al-football.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Cambridge, MA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month latin tour mn mn-stpaul">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/anthony-hamilton400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Saint Paul, MN</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month rock ms ms-biloxi">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-rock400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Biloxi, MS</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+   <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month country ms ms-jackson">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ken-ford400.jpg">  
+        <div class="caption tour-alert"> 
+         <div class="row"> 
+          <div class="col-xs-12">
+            <h5 class="item-tour"> Artist Name </h5>
+            <h5 class="item-sale"> On Sale Now </h5>
+          </div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-week month concert hiphop rnb nj nj-atlanticcity">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/a-tribe-called-quest400.jpg"> 
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlantic City, NJ</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month concert hiphop tour ny ny-brooklyn">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/billy-joel400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Brooklyn, NY</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month concert hiphop jazz nc nc-asheville">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-rock400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Asheville, NC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month rock tour nc nc-durham">
+     <a href="#"> 
+      <div class="thumbnail">
+       <img class="img-responsive" src="./img/sheryl-crow400.jpg">     
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Durham, NC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month tour country sc sc-charleston">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/al-football.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Charleston, SC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year country rnb sc sc-greenville">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/anthony-hamilton400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Greenville, SC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month tour rnb tn tn-nashville">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/diana-ross400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Nashville, TN</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month festival sc sc-myrtlebeach">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/enrique-iglesias400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Myrtle Beach, SC</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+   <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month rnb country tx tx-houston">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/brandy400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Houston, TX</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year rock tx tx-dallas">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/diana-ross400.jpg">    
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Dallas, TX</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-month concert hiphop festival tour va va-alexandria">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/kendrick-lamar400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Alexandria, VA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month latin festival tour wa wa-tacoma">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/leela-james400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Tacoma, WA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month rock wv wv-charlestown">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/kindred-the-family-soul400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Charles Town, WV</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month rnb country tour wi wi-milwaukee">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-brown400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Milwaukee, WI</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent nx-year jazz cn cn-calgary">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/chris-rock400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Calgary, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month rock cn cn-ottawa">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/cedric-entertainer400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Ottawa, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month concert hiphop jazz cn cn-quebec">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/ms-football.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Quebec, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+   <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year latin concert hiphop festival tour cn cn-toronto">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/stephanie-mills400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Toronto, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+<!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 recent week month rnb cn cn-vancouver">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/suitelifefridays450.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Vancouver, Canada</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month festival ga ga-atlanta">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/smino400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year latin ga ga-atlanta">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/sabrina-carpenter400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month jazz ga ga-atlanta">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/rick-ross400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-month rock ga ga-atlanta">
+     <a href="#"> 
+      <div class="thumbnail">
+         <img class="img-responsive" src="./img/kendrick-lamar400.jpg">   
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year rnb ga ga-atlanta">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/suitelifefridays450.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 nx-year concert hiphop festival tour ga ga-atlanta">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/sheryl-crow400.jpg">  
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+  <!-- /Thumbnail Post Begin -->
+    <div class="col-md-3 week month concert hiphop tour ga ga-atlanta">
+     <a href="#"> 
+      <div class="thumbnail">
+        <img class="img-responsive" src="./img/smino400.jpg"> 
+        <div class="caption"> 
+         <div class="row"> 
+          <div class="col-xs-3"><h4 class="item-date"> JUL <span>23</span> </h4></div>
+          <div class="col-xs-9"><h5 class="item-artist"> Sheryl Crow </h5>
+            <h5 class="item-city"> Atlanta, GA</h5></div>
+          </div> <!-- row -->
+        </div>  <!-- caption -->
+      </div>  <!-- thumbnail -->
+    </a>
+  </div> <!-- col-md-3 nx-month -->
+  <!-- /Thumbnail Post End -->
+
+
 
 
 </div>  <!-- /.row -->
 
+</div>  <!-- /.container -->
+
+
 <div class="clearfix"></div>
 
-    <br>
-
-</div>  <!-- /.container -->
+   <br>
 
 <script src="./dist/js/jquery-3.2.1.js"></script>
 <script src="./dist/js/bootstrap.min.js"></script>
-
-<script src="./dist/js/vendor/livefilter.min.js"></script>
-<script src="./dist/js/vendor/bootstrap-select.min.js"></script>
-<script src="./dist/js/vendor/filterlist.min.js"></script>
-<script src="./dist/js/vendor/tabcomplete.min.js"></script>
-<script src="./dist/js/vendor/plugins.js"></script>
-
-<script src="./dist/js/script.js"></script>
-
-<script>
+<script src="./dist/js/dropdown-selector.js"></script>
 
 
-</script>
+
 
 
 </body>
