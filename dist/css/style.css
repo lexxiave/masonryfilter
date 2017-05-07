@@ -1,4 +1,10 @@
+/*div {
+    display:none;
+    padding: 10px;
+    margin-bottom: 5px;
+}
 
+*/
 .input-lg, .form-control, .btn-group-lg>.btn, .btn-lg, .btn, .input-group-addon {
     border-radius: 0px; 
 }
@@ -2215,7 +2221,9 @@ p.lead {
 
   .item-date, .item-date span, .item-tour, .item-city {font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;}
 
-  .item-date, .item-tix, .item-sale, .item-sale span {font-size:20px;}
+  .item-date, .item-tix {font-size:20px;}
+
+  .item-sale, .item-sale span {font-size:18px;}
 
   .item-date span, .item-tix, .item-sale {font-weight:600;}
 
@@ -2246,3 +2254,83 @@ p.lead {
   .item-artist {font-size:16px;}
 
   .tour-alert {background-color: #a90000;}
+
+
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+#myInput {
+    border-box: box-sizing;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    /*min-width: 360px;*/
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 4px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #e6e6fa;}
+
+.show {display:block;}
+
+
+.dropdown-content .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.dropdown-content h4 {
+    font-size: 16px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 300px;
+    overflow-x: hidden;
+}
+
+#loadMore {
+    text-align: center;
+    transition: all 600ms ease-in-out;
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+}
