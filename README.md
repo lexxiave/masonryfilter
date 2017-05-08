@@ -1,38 +1,25 @@
 
 
-# Bootstrap Masonry Content Filter 
+### Vanilla HTML + Responsive Masonry + jQuery Load More Content + Dropdown Filter Control
 
-### Home
+Project Design (click view) <a href="https://github.com/lexxiave/masonryfilter/blob/master/design-mockup.pdf">Demo</a>
 
-Search All Category (e.g Comedy, Concerts, Festivals, Musicals, etc.)
+## No Database + Web API just Landing Pages
 
-View Demo: <https://masonryfilter.netlify.com/>
+# Loader Example (click view) - <a href="https://masonryfilter.netlify.com/loader.html">Demo</a>
 
-<a href="https://masonryfilter.netlify.com/">Demo</a>
+# Home (click view) - <a href="https://masonryfilter.netlify.com/home.html">Demo</a>
 
-## Concert
+# Shows (click view) - <a href="https://masonryfilter.netlify.com/concert.html">Demo</a>
 
-Search All Concerts (By Category: Country, Festivals, Hip Hop, Gospel, etc)
+# Games (click view) - <a href="https://masonryfilter.netlify.com/sport.html">Demo</a>
 
-View Demo: <https://masonryfilter.netlify.com/concert.html>
+The first attempt combines all elements together Responsive Masonry + jQuery Load More Content + Dropdown Filter Control.
 
-## Sports
+Note: Dropdown Filter Control won't close.  
+Demo (click view) - <a href="https://masonryfilter.netlify.com/test.html</a>
 
-Search All Games (e.g. Baseball, Basketball, Football & Soccer)
 
-View Demo: <https://masonryfilter.netlify.com/sport.html>
-
-***
-
-## Filter Test
-
-View Demo: <https://masonryfilter.netlify.com/filter.html>
-
-***
-
-## Test Prototype 
-
-View Demo: <https://masonryfilter.netlify.com/test.html>
 
 
 
