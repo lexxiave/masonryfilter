@@ -1,14 +1,14 @@
 
 
-### Vanilla HTML + Responsive Masonry + jQuery Load More Content + Dropdown Filter Control
+# Vanilla HTML + Responsive Masonry + jQuery Load More Content + Dropdown Filter Control
 
 Project Design (click view) <a href="https://github.com/lexxiave/masonryfilter/blob/master/design-mockup.pdf">Demo</a>
 
 ## No Database + Web API just Landing Pages
 
-# Loader Example (click view) - <a href="https://masonryfilter.netlify.com/loader.html">Demo</a>
+## Loader Example (click view) - <a href="https://masonryfilter.netlify.com/loader.html">Demo</a>
 
-# Home (click view) - <a href="https://masonryfilter.netlify.com/home.html">Demo</a>
+### Home (click view) - <a href="https://masonryfilter.netlify.com/home.html">Demo</a>
 
 # Shows (click view) - <a href="https://masonryfilter.netlify.com/concert.html">Demo</a>
 
