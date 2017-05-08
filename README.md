@@ -16,9 +16,8 @@ Project Design (click view) <a href="https://github.com/lexxiave/masonryfilter/b
 
 #### First Test Run
 The first attempt combines all elements together Responsive Masonry + jQuery Load More Content + Dropdown Filter Control.
-
-Dropdown Filter Control won't close.  
-Demo (click view) - <a href="https://masonryfilter.netlify.com/test.html</a>
+ 
+Test Run (click view) - <a href="https://masonryfilter.netlify.com/test.html">Demo</a>
 
 
 
