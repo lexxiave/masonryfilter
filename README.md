@@ -4,7 +4,7 @@
 
 Project Design (click view) <a href="https://github.com/lexxiave/masonryfilter/blob/master/design-mockup.pdf">Demo</a>
 
-### No Database + Web API just Landing Pages
+#### No Database + Web API just Landing Pages
 
 ### Loader Example (click view) - <a href="https://masonryfilter.netlify.com/loader.html">Demo</a>
 
