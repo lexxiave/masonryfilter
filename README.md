@@ -8,6 +8,8 @@ Search All Category (e.g Comedy, Concerts, Festivals, Musicals, etc.)
 
 View Demo: <https://masonryfilter.netlify.com/>
 
+<a href="https://masonryfilter.netlify.com/">Demo</a>
+
 ## Concert
 
 Search All Concerts (By Category: Country, Festivals, Hip Hop, Gospel, etc)
