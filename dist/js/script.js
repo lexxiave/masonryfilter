@@ -1,6 +1,8 @@
 /* Loader */
+
 $(function () {
-    $("div").slice(0, 117).show();
+   // $("div").slice(0, 117).show();
+   
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
         $("div:hidden").slice(0, 47).slideDown();
@@ -11,7 +13,9 @@ $(function () {
             scrollTop: $(this).offset().top
         }, 1500);
     });
+    
 });
+
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -75,10 +79,6 @@ function filterFunction() {
         }
     }
 }
-</script>
-
-
-<script>
 
 $(document).ready(function () {
     $('#filterOptions li a').click(function () {
