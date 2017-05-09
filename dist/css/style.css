@@ -2241,7 +2241,7 @@ p.lead {
 
   .item-artist span, .item-tour span {font-size: 14px;font-weight: 300;}
 
-  .item-city, .item-sale, .item-tix {text-transform:uppercase;}
+  .item-city, .item-sale, .item-tix, .item-tour {text-transform:uppercase;}
 
   .item-city {font-size:12px;font-weight:400;}
 
@@ -2249,13 +2249,16 @@ p.lead {
 
   .item-tour, .item-sale {color:#fff;}
 
-  .item-tour {font-size: 18px;}
+  .item-tour {font-size: 17px;}
 
-  .item-artist {font-size:16px;}
+  .item-artist {font-size:13px;}
 
   .tour-alert {background-color: #a90000;}
 
 
+  div {
+    display:none;
+}
 
 
 .dropbtn {
