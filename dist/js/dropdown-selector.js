@@ -73,7 +73,7 @@ $(document).ready(function () {
         var ed = $(e.target);
         var v = ed.val().toLowerCase().trim();
         ed.parents('ul:first').find('li > a').each(function(i, e) {
-            // if ($(e).hasClass('all')) return;
+            if ($(e).hasClass('all')) return;
             var li = $(e).parents('li:first');
             if (v=='') {
                 li.css('display','');
