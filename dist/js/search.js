@@ -29,6 +29,7 @@ $(function () {
         
         var city = $('#bts-ex-5 .filter-item.selected');
         if (city.length>0) ctrls.city = city.html().trim().toLowerCase();
+        if (city.attr('data-value')=='any') ctrls.city=null;
         
         var s = $('.do-search input').val();
         filterItems('.item-artist',s, ctrls);
