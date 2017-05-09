@@ -1,5 +1,5 @@
 function filterItems(selector, s, ctrls) {
-    
+    /*
     function filterCity(li, thumb) {
         if (ctrls.city==null) return true;
         if (li.next().html().trim().toLowerCase()==ctrls.city) return true;
@@ -9,17 +9,16 @@ function filterItems(selector, s, ctrls) {
     function filterCategory(li, thumb)
     {
     }
+    */
     
     $(selector).each(function(i,e) { 
         var li = $(e);
         var txt = li.html().toLowerCase();
         var filter = s.toLowerCase();
         var thumb = li.parents('div.col-md-3:first');
-        if (txt.search(filter) > -1 && filterCity(li, thumb))
+        if (txt.search(filter) > -1 // && filterCity(li, thumb))
         {  thumb.css('display', '');
         } else thumb.css('display', 'none');
-        
-        // li.attr('data-filter',li.html().trim());        
     });
 
 }
@@ -42,7 +41,6 @@ $(function () {
         var s = $('.do-search input').val();
         filterItems('.item-artist',s, ctrls);
         filterItems('.item-tour',s, ctrls);
-        console.log('Search done');
     }
 
    // Add keywords for all filter values
