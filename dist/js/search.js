@@ -16,7 +16,7 @@ function filterItems(selector, s, ctrls) {
         var txt = li.html().toLowerCase();
         var filter = s.toLowerCase();
         var thumb = li.parents('div.col-md-3:first');
-        if (txt.search(filter) > -1 // && filterCity(li, thumb))
+        if (txt.search(filter) > -1 )// && filterCity(li, thumb))
         {  thumb.css('display', '');
         } else thumb.css('display', 'none');
     });
