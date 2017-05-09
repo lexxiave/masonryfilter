@@ -1,8 +1,12 @@
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+
+
 function srDate() {
+    $('.dropdown-content').removeClass('show');
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
 /*
 function filterFunction() {
     var input, filter, ul, li, a, i;
@@ -22,9 +26,13 @@ function filterFunction() {
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
+
+
 function srCategory() {
+    $('.dropdown-content').removeClass('show');
     document.getElementById("myDropdown02").classList.toggle("show");
 }
+
 
 /*
 function filterFunction() {
@@ -46,10 +54,11 @@ function filterFunction() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function srCity() {
+    $('.dropdown-content').removeClass('show');
     document.getElementById("myDropdown03").classList.toggle("show");
 }
 
-/*
+
 function filterFunction() {
     var input, filter, ul, li, a, i;
     input = document.getElementById("myInput");
@@ -64,12 +73,13 @@ function filterFunction() {
         }
     }
 }
-*/
+
 
 $(document).ready(function () {
+        
     $('#filterOptions li a').click(function (e) {
         
-        console.log(e);
+        // Filter code
         var ourClass = $(this).attr('class');
         $('#filterOptions li').removeClass('active');
         $(this).parent().addClass('active');
@@ -80,12 +90,30 @@ $(document).ready(function () {
             $('#ourHolder').children('div:not(.' + ourClass + ')').hide();
             $('#ourHolder').children('div.' + ourClass).show();
         }
+        
         // hide menu
         $(e.target).parents('.dropdown-content:first').removeClass('show');
+        
         // change label
         var span = $(e.target).parents('.selectpicker:first').find('button span:first');
         span.html($(e.target).html()).addClass('text').removeClass('placeholder');
         
         return false;
+    });
+    
+    $('.dropdown-content input').keyup(function(e){
+        var ed = $(e.target);
+        var v = ed.val().toLowerCase().trim();
+        ed.parents('ul:first').find('li > a').each(function(i, e) {
+            // if ($(e).hasClass('all')) return;
+            var li = $(e).parents('li:first');
+            if (v=='') {
+                li.css('display','');
+            } else  if (e.innerHTML.toLowerCase().search(v) > -1 )
+            {   li.css('display','');
+            } else  li.css('display','none');            
+        });
+        if (v=='')  ed.parents('ul:first').find('li.divider').css('display','');
+        else ed.parents('ul:first').find('li.divider').css('display','none');
     });
 });
