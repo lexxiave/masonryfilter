@@ -1,9 +1,9 @@
 $(function () {
-    $("div").slice(0, 96).show();
+    $(".w-thumbnails div").slice(0, 96).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
-        $("div:hidden").slice(0, 47).slideDown();
-        if ($("div:hidden").length == 0) {
+        $(".w-thumbnails div:hidden").slice(0, 47).slideDown();
+        if ($(".w-thumbnails div:hidden").length == 0) {
             $("#load").fadeOut('slow');
         }
         $('html,body').animate({
