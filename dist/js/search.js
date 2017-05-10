@@ -17,7 +17,7 @@ function filterItems(selector, s, ctrls) {
         var filter = s.toLowerCase();
         var thumb = li.parents('div.col-md-3:first');
         if (txt.search(filter) > -1 )// && filterCity(li, thumb))
-        {  thumb.css('display', '');
+        {  thumb.css('display', 'block');
         } else thumb.css('display', 'none');
     });
 
